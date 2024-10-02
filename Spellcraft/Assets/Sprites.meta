@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 57ff7689f6532c34a95c7e302423f88c
 =======
 guid: cce94a33ea8ae49caaec3c2ccc2e8dca
 >>>>>>> c29eb765 (Add player sprites)
+=======
+guid: cce94a33ea8ae49caaec3c2ccc2e8dca
+>>>>>>> origin/PlayerSprites
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
