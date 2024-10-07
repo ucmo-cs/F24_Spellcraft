@@ -18,7 +18,6 @@ public class SpellsBase : MonoBehaviour
     void Start()
     {
         SpellInfo.gameObject.SetActive(false);
-        path = GameObject.FindGameObjectWithTag("Trajectory");
         path.gameObject.SetActive(false);
     }
 
@@ -51,6 +50,10 @@ public class SpellsBase : MonoBehaviour
         // If the trajectory needs to rotate, it will call the function to rotate it
         else if(rotating) {
             rotateSpell();
+        }
+        if(Input.GetKeyUp(KeyCode.E)) {
+            GameObject tempSpell = Instantiate(spell, path.transform.position, path.transform.rotation);
+            tempSpell.transform.right = path.transform.right.normalized;
         }
     }
 
@@ -123,10 +126,6 @@ public class SpellsBase : MonoBehaviour
             else if(Input.GetAxisRaw("Vertical") < 0) {
                 rotation = 180f;
                 rotating = true;
-            }
-            else if(Input.GetKeyUp(KeyCode.E)) {
-                GameObject tempSpell = Instantiate(spell, path.transform.position, path.transform.rotation);
-                tempSpell.transform.right = path.transform.right.normalized;
             }
         }
         // Since they aren't being shown the menu anymore, we return movement control back
