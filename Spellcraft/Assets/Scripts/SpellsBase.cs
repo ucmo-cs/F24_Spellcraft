@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class SpellsBase : MonoBehaviour
@@ -14,8 +15,7 @@ public class SpellsBase : MonoBehaviour
 
     public Sprite trajectory;
     public Sprite empty;
-    Vector3 mousePosition;
-    float angle;
+    bool casting;
     void Start()
     {
         SpellInfo.gameObject.SetActive(false);
@@ -37,7 +37,7 @@ public class SpellsBase : MonoBehaviour
             hideSpellInfo();
         }
         // Spawns a base spell projectile when the 'E' key is pressed
-        if(Input.GetKeyUp(KeyCode.E)) {
+        if(Input.GetKeyUp(KeyCode.E) && !casting) {
             StartCoroutine("castSpell");
         }
     }
@@ -60,14 +60,14 @@ public class SpellsBase : MonoBehaviour
     void prepareSpell()
     {
         // Takes in the mouse's current position
-        mousePosition = Input.mousePosition;
+        Vector3 mousePosition = Input.mousePosition;
         // Translates the mouse's current position into something applicable to the game's window
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
         // Sets x and y of the mouse's position to the distance between it and the trajectory's current position
         mousePosition.x = mousePosition.x - path.transform.position.x;
         mousePosition.y = mousePosition.y - path.transform.position.y;
         // Calculates the angle of the where the mouse is in relation to where the trajectory line is (minus 90 degrees for some reason)
-        angle = (Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg) - 90f;
+        float angle = (Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg) - 90f;
         // Sets the trajectory line's rotation to be on the mouse's position and since we can't snap the mouse, it will look smooth
         path.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
@@ -76,25 +76,29 @@ public class SpellsBase : MonoBehaviour
     {
         GameObject tempSpell = Instantiate(spell, path.transform.position, path.transform.rotation);
         tempSpell.transform.right = path.transform.right.normalized;
+        float angle = path.transform.rotation.eulerAngles.z;
+        Debug.Log("Pointing at " + angle + " degrees");
         if((angle > 0 && angle < 45) || (angle < 360 && angle > 315)) {
+            anim.SetBool("CastUp", true);
+            player.flipX = false;
+        }
+        else if((angle >= 45 && angle <= 135)) {
             anim.SetBool("CastSide", true);
             player.flipX = false;
         }
-        else if((angle >= 45 || angle <= 135)) {
-            anim.SetBool("CastLeft", true);
-            player.flipX = false;
-        }
-        else if((angle > 135 || angle < 225)) {
+        else if((angle > 135 && angle < 225)) {
             anim.SetBool("CastDown", true);
             player.flipX = false;
         }
-        else {
+        else if((angle > 225 && angle < 315)) {
             anim.SetBool("CastSide", true);
             player.flipX = true;
         }
-        yield return new WaitForSeconds(1.5f);
+        casting = true;
+        yield return new WaitForSeconds(0.5f);
+        casting = false;
         anim.SetBool("CastSide", false);
-        anim.SetBool("CaseUp", false);
+        anim.SetBool("CastUp", false);
         anim.SetBool("CastDown", false);
         player.flipX = false;
     }
