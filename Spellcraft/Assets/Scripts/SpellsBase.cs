@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class SpellsBase : MonoBehaviour
@@ -9,12 +10,18 @@ public class SpellsBase : MonoBehaviour
     public Image SpellInfo;
     public GameObject path;
     public GameObject spell;
+    Animator anim;
+    SpriteRenderer player;
+
     public Sprite trajectory;
     public Sprite empty;
+    bool casting;
     void Start()
     {
         SpellInfo.gameObject.SetActive(false);
         path.GetComponent<SpriteRenderer>().sprite = empty;
+        anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -30,9 +37,8 @@ public class SpellsBase : MonoBehaviour
             hideSpellInfo();
         }
         // Spawns a base spell projectile when the 'E' key is pressed
-        if(Input.GetKeyUp(KeyCode.E)) {
-            GameObject tempSpell = Instantiate(spell, path.transform.position, path.transform.rotation);
-            tempSpell.transform.right = path.transform.right.normalized;
+        if(Input.GetKeyUp(KeyCode.E) && !casting) {
+            StartCoroutine("castSpell");
         }
     }
 
@@ -64,5 +70,36 @@ public class SpellsBase : MonoBehaviour
         float angle = (Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg) - 90f;
         // Sets the trajectory line's rotation to be on the mouse's position and since we can't snap the mouse, it will look smooth
         path.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+    }
+
+    IEnumerator castSpell()
+    {
+        GameObject tempSpell = Instantiate(spell, path.transform.position, path.transform.rotation);
+        tempSpell.transform.right = path.transform.right.normalized;
+        float angle = path.transform.rotation.eulerAngles.z;
+        Debug.Log("Pointing at " + angle + " degrees");
+        if((angle > 0 && angle < 45) || (angle < 360 && angle > 315)) {
+            anim.SetBool("CastUp", true);
+            player.flipX = false;
+        }
+        else if((angle >= 45 && angle <= 135)) {
+            anim.SetBool("CastSide", true);
+            player.flipX = false;
+        }
+        else if((angle > 135 && angle < 225)) {
+            anim.SetBool("CastDown", true);
+            player.flipX = false;
+        }
+        else if((angle > 225 && angle < 315)) {
+            anim.SetBool("CastSide", true);
+            player.flipX = true;
+        }
+        casting = true;
+        yield return new WaitForSeconds(0.5f);
+        casting = false;
+        anim.SetBool("CastSide", false);
+        anim.SetBool("CastUp", false);
+        anim.SetBool("CastDown", false);
+        player.flipX = false;
     }
 }
