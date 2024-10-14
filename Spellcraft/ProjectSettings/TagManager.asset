@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fire
+  - Freeze
+  - Resize
+  - Gateway
+  - Telekinesis
+  - Remote Control
   layers:
   - Default
   - TransparentFX
