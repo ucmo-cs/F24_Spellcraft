@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft
 =======
 C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft
 >>>>>>> Stashed changes
+=======
+C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1

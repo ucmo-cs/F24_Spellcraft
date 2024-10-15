@@ -13,7 +13,7 @@ public class SpellProjectile : MonoBehaviour
         // The gameobject always starts with a -90 degree rotation for some reason so this fixes it
         transform.Rotate(0f, 0f, 90f);
         // This makes it so we don't crash them if they play enough
-        Destroy(gameObject, 4);
+        Destroy(gameObject, 1.5f);
         rb = this.GetComponent<Rigidbody2D>();
     }
 

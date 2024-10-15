@@ -1,14 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     m_FilePath: C:/Users/ninja/Documents/GitHub/F24_Spellcraft/Spellcraft/Packages/manifest.json
 =======
     m_FilePath: C:/Users/Sam Brodersen/SeniorProject/F24_Spellcraft/Spellcraft/Packages/manifest.json
 >>>>>>> Stashed changes
+=======
+    m_FilePath: C:/Users/Owner/Documents/GitHub/F24_Spellcraft/Spellcraft/Packages/manifest.json
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       ticks: 638636639543130191
     m_Hash: 5483027
@@ -20,25 +25,40 @@ m_ProjectFiles:
   m_LockFileStatus:
     m_FilePath: C:/Users/Sam Brodersen/SeniorProject/F24_Spellcraft/Spellcraft/Packages/packages-lock.json
 >>>>>>> Stashed changes
+=======
+      ticks: 638628949414305082
+    m_Hash: 3514303169
+  m_LockFileStatus:
+    m_FilePath: C:/Users/Owner/Documents/GitHub/F24_Spellcraft/Spellcraft/Packages/packages-lock.json
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       ticks: 638636639543130191
 =======
       ticks: 638638611540961742
 >>>>>>> Stashed changes
     m_Hash: 1037022759
+=======
+      ticks: 638628949414923891
+    m_Hash: 2429836110
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 m_ProjectPath: C:/Users/ninja/Documents/GitHub/F24_Spellcraft/Spellcraft/Packages
 =======
 m_ProjectPath: C:/Users/Sam Brodersen/SeniorProject/F24_Spellcraft/Spellcraft/Packages
 >>>>>>> Stashed changes
+=======
+m_ProjectPath: C:/Users/Owner/Documents/GitHub/F24_Spellcraft/Spellcraft/Packages
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
 m_EditorVersion: 2022.3.46f1 (8e9b8558c41a)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.5.1
@@ -46,11 +66,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.5.1
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.collab-proxy@2.5.1
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.collab-proxy@2.5.1
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.collab-proxy@2.5.1
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -197,11 +221,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.1
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.feature.2d@2.0.1
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.feature.2d@2.0.1
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.feature.2d@2.0.1
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.feature.2d
   name: com.unity.feature.2d
   displayName: 2D
@@ -247,22 +275,22 @@ m_ResolvedPackages:
     version: 9.1.1
   - name: com.unity.2d.common
     version: 8.0.3
-  - name: com.unity.2d.sprite
-    version: 1.0.0
+  - name: com.unity.burst
+    version: 1.8.17
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.burst
-    version: 1.8.17
   - name: com.unity.collections
     version: 1.2.4
   - name: com.unity.test-framework
@@ -320,11 +348,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.31
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ide.rider@3.0.31
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ide.rider@3.0.31
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ide.rider@3.0.31
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -333,7 +365,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
@@ -405,7 +437,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638548308080000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
@@ -427,11 +459,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.22
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -521,11 +557,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 14.0.11
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.universal@14.0.11
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -543,6 +583,51 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 7.0.0
+    - 7.0.1
+    - 7.1.1
+    - 7.1.2
+    - 7.1.5
+    - 7.1.6
+    - 7.1.7
+    - 7.1.8
+    - 7.2.0
+    - 7.2.1
+    - 7.3.1
+    - 7.4.1
+    - 7.4.2
+    - 7.4.3
+    - 7.5.1
+    - 7.5.2
+    - 7.5.3
+    - 7.6.0
+    - 7.7.0
+    - 7.7.1
+    - 8.0.1
+    - 8.1.0
+    - 8.2.0
+    - 8.3.1
+    - 9.0.0-preview.14
+    - 9.0.0-preview.35
+    - 9.0.0-preview.55
+    - 9.0.0-preview.72
+    - 10.0.0-preview.26
+    - 10.1.0
+    - 10.2.0
+    - 10.2.1
+    - 10.2.2
+    - 10.3.1
+    - 10.3.2
+    - 10.4.0
+    - 10.5.0
+    - 10.5.1
+    - 10.6.0
+    - 10.7.0
+    - 10.8.0
+    - 10.8.1
+    - 10.9.0
+    - 10.10.0
+    - 10.10.1
     - 14.0.11
     compatible:
     - 14.0.11
@@ -623,11 +708,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.1.33
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.test-framework@1.1.33
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.test-framework@1.1.33
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.test-framework@1.1.33
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -690,6 +779,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -710,6 +800,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -765,11 +856,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.6
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.textmeshpro@3.0.6
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.textmeshpro@3.0.6
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.textmeshpro@3.0.6
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -885,6 +980,7 @@ m_ResolvedPackages:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -894,12 +990,14 @@ m_ResolvedPackages:
     - 3.2.0-pre.7
     - 3.2.0-pre.8
     - 3.2.0-pre.9
+    - 3.2.0-pre.10
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
     - 3.0.6
     - 3.0.7
     - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
@@ -909,9 +1007,10 @@ m_ResolvedPackages:
     - 3.2.0-pre.7
     - 3.2.0-pre.8
     - 3.2.0-pre.9
+    - 3.2.0-pre.10
     - 4.0.0-pre.1
     - 4.0.0-pre.2
-    recommended: 3.0.8
+    recommended: 3.0.9
     deprecated: []
   dependencies:
   - name: com.unity.ugui
@@ -961,11 +1060,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.7.6
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.timeline@1.7.6
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.timeline@1.7.6
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.timeline@1.7.6
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1066,6 +1169,7 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     compatible:
     - 1.7.6
     - 1.8.0
@@ -1075,21 +1179,22 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
+    - 1.8.7
     recommended: 1.7.6
     deprecated: []
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -1133,11 +1238,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ugui@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ugui@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ugui@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1210,11 +1319,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.4
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.visualscripting@1.9.4
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.visualscripting@1.9.4
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.visualscripting@1.9.4
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1313,11 +1426,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.ai@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.ai@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.ai@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1373,11 +1490,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.androidjni@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.androidjni@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1432,11 +1553,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.animation@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.animation@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.animation@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1492,11 +1617,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1552,11 +1681,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.audio@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.audio@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.audio@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1612,11 +1745,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.cloth@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.cloth@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.cloth@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1676,11 +1813,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.director@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.director@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.director@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1744,11 +1885,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1805,11 +1950,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.imgui@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.imgui@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.imgui@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1865,11 +2014,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1925,11 +2078,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1985,11 +2142,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.physics@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.physics@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.physics@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -2045,11 +2206,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.physics2d@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.physics2d@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -2105,11 +2270,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.screencapture@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.screencapture@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -2169,11 +2338,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.terrain@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.terrain@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.terrain@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -2229,11 +2402,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -2297,11 +2474,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.tilemap@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.tilemap@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2360,11 +2541,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.ui@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.ui@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.ui@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2420,11 +2605,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.uielements@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.uielements@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.uielements@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2492,11 +2681,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.umbra@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.umbra@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.umbra@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2552,11 +2745,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2620,11 +2817,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2680,11 +2881,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2748,11 +2953,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2816,11 +3025,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2884,11 +3097,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2968,11 +3185,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.vehicles@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.vehicles@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -3032,11 +3253,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.video@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.video@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.video@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -3104,11 +3329,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.vr@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.vr@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.vr@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -3178,11 +3407,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.wind@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.wind@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.wind@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -3238,11 +3471,15 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.xr@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.xr@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.xr@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -3310,11 +3547,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.subsystems@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.subsystems@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -3374,11 +3615,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.6
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ext.nunit@1.0.6
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ext.nunit@1.0.6
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.ext.nunit@1.0.6
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3450,11 +3695,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.6
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.mathematics@1.2.6
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.mathematics@1.2.6
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.mathematics@1.2.6
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -3488,9 +3737,11 @@ m_ResolvedPackages:
     - 1.2.5
     - 1.2.6
     - 1.3.1
+    - 1.3.2
     compatible:
     - 1.2.6
     - 1.3.1
+    - 1.3.2
     recommended: 1.2.6
     deprecated: []
   dependencies: []
@@ -3529,11 +3780,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.17
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.burst@1.8.17
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.burst@1.8.17
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.burst@1.8.17
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -3542,7 +3797,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: Burst is a compiler that translates from IL/.NET bytecode to highly
     optimized native code using LLVM.
   status: 0
@@ -3673,10 +3928,19 @@ m_ResolvedPackages:
     - 1.8.7
     - 1.8.8
     - 1.8.9
+    - 1.8.10
+    - 1.8.11
+    - 1.8.12
+    - 1.8.13
+    - 1.8.14
+    - 1.8.15
+    - 1.8.16
     - 1.8.17
+    - 1.8.18
     compatible:
     - 1.8.17
-    recommended: 1.8.17
+    - 1.8.18
+    recommended: 1.8.18
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -3699,7 +3963,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638573293750000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
@@ -3721,11 +3985,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 14.0.11
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.core@14.0.11
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.core@14.0.11
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.core@14.0.11
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -3746,6 +4014,104 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.1.21
+    - 0.1.27
+    - 0.1.28
+    - 1.0.0-beta
+    - 1.0.1-beta
+    - 1.1.1-preview
+    - 1.1.2-preview
+    - 1.1.4-preview
+    - 1.1.5-preview
+    - 1.1.8-preview
+    - 1.1.10-preview
+    - 1.1.11-preview
+    - 2.0.1-preview
+    - 2.0.3-preview
+    - 2.0.4-preview
+    - 2.0.4-preview.1
+    - 2.0.5-preview
+    - 2.0.6-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 3.0.0-preview
+    - 3.1.0-preview
+    - 3.3.0-preview
+    - 4.0.0-preview
+    - 4.0.1-preview
+    - 4.1.0-preview
+    - 4.2.0-preview
+    - 4.3.0-preview
+    - 4.6.0-preview
+    - 4.8.0-preview
+    - 4.9.0-preview
+    - 4.10.0-preview
+    - 5.0.0-preview
+    - 5.1.0
+    - 5.2.0
+    - 5.2.1
+    - 5.2.2
+    - 5.2.3
+    - 5.3.1
+    - 5.6.1
+    - 5.7.2
+    - 5.8.2
+    - 5.9.0
+    - 5.10.0
+    - 5.13.0
+    - 5.16.1
+    - 6.5.2
+    - 6.5.3
+    - 6.7.1
+    - 6.9.0
+    - 6.9.1
+    - 6.9.2
+    - 7.0.0
+    - 7.0.1
+    - 7.1.1
+    - 7.1.2
+    - 7.1.5
+    - 7.1.6
+    - 7.1.7
+    - 7.1.8
+    - 7.2.0
+    - 7.2.1
+    - 7.3.1
+    - 7.4.1
+    - 7.4.2
+    - 7.4.3
+    - 7.5.1
+    - 7.5.2
+    - 7.5.3
+    - 7.6.0
+    - 7.7.0
+    - 7.7.1
+    - 8.0.1
+    - 8.1.0
+    - 8.2.0
+    - 8.3.1
+    - 9.0.0-preview.13
+    - 9.0.0-preview.35
+    - 9.0.0-preview.38
+    - 9.0.0-preview.60
+    - 9.0.0-preview.77
+    - 10.0.0-preview.30
+    - 10.1.0
+    - 10.2.0
+    - 10.2.1
+    - 10.2.2
+    - 10.3.1
+    - 10.3.2
+    - 10.4.0
+    - 10.5.0
+    - 10.5.1
+    - 10.6.0
+    - 10.7.0
+    - 10.8.0
+    - 10.8.1
+    - 10.9.0
+    - 10.10.0
+    - 10.10.1
     - 14.0.11
     compatible:
     - 14.0.11
@@ -3806,11 +4172,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 14.0.11
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.shadergraph@14.0.11
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.shadergraph@14.0.11
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.shadergraph@14.0.11
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -3829,6 +4199,103 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.1.8
+    - 0.1.9
+    - 0.1.17
+    - 1.0.0-beta
+    - 1.1.1-preview
+    - 1.1.2-preview
+    - 1.1.3-preview
+    - 1.1.4-preview
+    - 1.1.5-preview
+    - 1.1.6-preview
+    - 1.1.8-preview
+    - 1.1.9-preview
+    - 2.0.1-preview
+    - 2.0.3-preview
+    - 2.0.4-preview
+    - 2.0.4-preview.1
+    - 2.0.5-preview
+    - 2.0.6-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 3.0.0-preview
+    - 3.1.0-preview
+    - 3.3.0-preview
+    - 4.0.0-preview
+    - 4.0.1-preview
+    - 4.1.0-preview
+    - 4.2.0-preview
+    - 4.3.0-preview
+    - 4.6.0-preview
+    - 4.8.0-preview
+    - 4.9.0-preview
+    - 4.10.0-preview
+    - 5.0.0-preview
+    - 5.1.0
+    - 5.2.0
+    - 5.2.1
+    - 5.2.2
+    - 5.2.3
+    - 5.3.1
+    - 5.6.1
+    - 5.7.2
+    - 5.8.2
+    - 5.9.0
+    - 5.10.0
+    - 5.13.0
+    - 5.16.1
+    - 6.5.2
+    - 6.5.3
+    - 6.7.1
+    - 6.9.0
+    - 6.9.1
+    - 6.9.2
+    - 7.0.0
+    - 7.0.1
+    - 7.1.1
+    - 7.1.2
+    - 7.1.5
+    - 7.1.6
+    - 7.1.7
+    - 7.1.8
+    - 7.2.0
+    - 7.2.1
+    - 7.3.1
+    - 7.4.1
+    - 7.4.2
+    - 7.4.3
+    - 7.5.1
+    - 7.5.2
+    - 7.5.3
+    - 7.6.0
+    - 7.7.0
+    - 7.7.1
+    - 8.0.1
+    - 8.1.0
+    - 8.2.0
+    - 8.3.1
+    - 9.0.0-preview.14
+    - 9.0.0-preview.34
+    - 9.0.0-preview.55
+    - 9.0.0-preview.72
+    - 10.0.0-preview.27
+    - 10.1.0
+    - 10.2.0
+    - 10.2.1
+    - 10.2.2
+    - 10.3.1
+    - 10.3.2
+    - 10.4.0
+    - 10.5.0
+    - 10.5.1
+    - 10.6.0
+    - 10.7.0
+    - 10.8.0
+    - 10.8.1
+    - 10.9.0
+    - 10.10.0
+    - 10.10.1
     - 14.0.11
     compatible:
     - 14.0.11
@@ -3889,11 +4356,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 14.0.10
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.universal-config@14.0.10
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.universal-config@14.0.10
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.render-pipelines.universal-config@14.0.10
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal RP Config
@@ -3964,11 +4435,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 9.1.1
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.animation@9.1.1
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.animation@9.1.1
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.animation@9.1.1
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.animation
   name: com.unity.2d.animation
   displayName: 2D Animation
@@ -3977,7 +4452,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: assets
   description: 2D Animation provides all the necessary tooling and runtime components
     for skeletal animation using Sprites.
   status: 0
@@ -4080,6 +4555,9 @@ m_ResolvedPackages:
     - 7.0.10
     - 7.0.11
     - 7.0.12
+    - 7.0.13
+    - 7.1.0
+    - 7.1.1
     - 8.0.0-pre.3
     - 8.0.0-pre.4
     - 8.0.0
@@ -4095,16 +4573,23 @@ m_ResolvedPackages:
     - 9.0.2
     - 9.0.3
     - 9.0.4
+    - 9.1.0
     - 9.1.1
+    - 9.1.2
     - 10.0.0-pre.1
     - 10.0.0-pre.2
     - 10.0.0
     - 10.0.1
     - 10.0.2
     - 10.0.3
+    - 10.1.0
+    - 10.1.1
+    - 10.1.2
+    - 10.1.3
     compatible:
     - 9.1.1
-    recommended: 9.1.1
+    - 9.1.2
+    recommended: 9.1.2
     deprecated: []
   dependencies:
   - name: com.unity.2d.common
@@ -4120,22 +4605,22 @@ m_ResolvedPackages:
   resolvedDependencies:
   - name: com.unity.2d.common
     version: 8.0.3
-  - name: com.unity.2d.sprite
-    version: 1.0.0
+  - name: com.unity.burst
+    version: 1.8.17
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.burst
-    version: 1.8.17
   - name: com.unity.collections
     version: 1.2.4
   - name: com.unity.test-framework
@@ -4155,7 +4640,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638515171890000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.animation@9.1/manual/index.html
   hasRepository: 1
   repository:
@@ -4177,11 +4662,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 5.0.3
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.pixel-perfect
   name: com.unity.2d.pixel-perfect
   displayName: 2D Pixel Perfect
@@ -4265,11 +4754,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 8.0.5
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.psdimporter@8.0.5
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.psdimporter@8.0.5
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.psdimporter@8.0.5
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.psdimporter
   name: com.unity.2d.psdimporter
   displayName: 2D PSD Importer
@@ -4278,7 +4771,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: assets
   description: A ScriptedImporter for importing Adobe Photoshop PSB (Photoshop Big)
     file format. The ScriptedImporter is currently targeted for users who wants to
     create multi Sprite character animation using Unity 2D Animation Package.
@@ -4343,6 +4836,8 @@ m_ResolvedPackages:
     - 6.0.5
     - 6.0.6
     - 6.0.7
+    - 6.0.8
+    - 6.0.9
     - 7.0.0-pre.3
     - 7.0.0-pre.4
     - 7.0.0
@@ -4354,43 +4849,47 @@ m_ResolvedPackages:
     - 8.0.0
     - 8.0.1
     - 8.0.2
+    - 8.0.3
+    - 8.0.4
     - 8.0.5
     - 9.0.0-pre.1
     - 9.0.0-pre.2
     - 9.0.0
     - 9.0.1
+    - 9.0.2
+    - 9.0.3
     compatible:
     - 8.0.5
     recommended: 8.0.5
     deprecated: []
   dependencies:
-  - name: com.unity.2d.animation
-    version: 9.1.1
   - name: com.unity.2d.common
     version: 8.0.2
   - name: com.unity.2d.sprite
     version: 1.0.0
-  resolvedDependencies:
   - name: com.unity.2d.animation
     version: 9.1.1
+  resolvedDependencies:
   - name: com.unity.2d.common
     version: 8.0.3
-  - name: com.unity.2d.sprite
-    version: 1.0.0
+  - name: com.unity.burst
+    version: 1.8.17
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.burst
-    version: 1.8.17
+  - name: com.unity.2d.animation
+    version: 9.1.1
   - name: com.unity.collections
     version: 1.2.4
   - name: com.unity.test-framework
@@ -4411,7 +4910,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638515171920000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.psdimporter@8.0/manual/index.html
   hasRepository: 1
   repository:
@@ -4433,11 +4932,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.sprite@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.sprite@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.sprite@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -4496,11 +4999,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 9.0.4
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.spriteshape@9.0.4
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.spriteshape@9.0.4
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.spriteshape@9.0.4
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.spriteshape
   name: com.unity.2d.spriteshape
   displayName: 2D SpriteShape
@@ -4509,7 +5016,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: assets
   description: SpriteShape Runtime & Editor Package contains the tooling and the
     runtime component that allows you to create very organic looking spline based
     2D worlds. It comes with intuitive configurator and a highly performant renderer.
@@ -4594,29 +5101,40 @@ m_ResolvedPackages:
     - 9.0.0
     - 9.0.1
     - 9.0.2
+    - 9.0.3
     - 9.0.4
     - 10.0.0-pre.1
     - 10.0.0-pre.2
     - 10.0.0
     - 10.0.1
     - 10.0.2
+    - 10.0.3
+    - 10.0.4
+    - 10.0.5
+    - 10.0.6
     compatible:
     - 9.0.4
     recommended: 9.0.4
     deprecated: []
   dependencies:
-  - name: com.unity.mathematics
-    version: 1.1.0
   - name: com.unity.2d.common
     version: 8.0.3
+  - name: com.unity.mathematics
+    version: 1.1.0
   - name: com.unity.modules.physics2d
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.mathematics
-    version: 1.2.6
   - name: com.unity.2d.common
     version: 8.0.3
+  - name: com.unity.burst
+    version: 1.8.17
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.modules.animation
     version: 1.0.0
   - name: com.unity.modules.uielements
     version: 1.0.0
@@ -4624,12 +5142,6 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.burst
-    version: 1.8.17
   - name: com.unity.modules.physics2d
     version: 1.0.0
   keywords:
@@ -4649,7 +5161,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638567250110000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@9.0/manual/index.html
   hasRepository: 1
   repository:
@@ -4671,11 +5183,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.tilemap@1.0.0
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.tilemap@1.0.0
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.tilemap@1.0.0
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.tilemap
   name: com.unity.2d.tilemap
   displayName: 2D Tilemap Editor
@@ -4749,11 +5265,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.1.2
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.tilemap.extras@3.1.2
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.tilemap.extras@3.1.2
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.tilemap.extras@3.1.2
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.tilemap.extras
   name: com.unity.2d.tilemap.extras
   displayName: 2D Tilemap Extras
@@ -4823,30 +5343,30 @@ m_ResolvedPackages:
     recommended: 3.1.2
     deprecated: []
   dependencies:
-  - name: com.unity.modules.tilemap
+  - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.2d.tilemap
     version: 1.0.0
-  - name: com.unity.ugui
+  - name: com.unity.modules.tilemap
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.tilemap
-    version: 1.0.0
-  - name: com.unity.modules.physics2d
-    version: 1.0.0
-  - name: com.unity.2d.tilemap
-    version: 1.0.0
-  - name: com.unity.modules.uielements
+  - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
+  - name: com.unity.2d.tilemap
     version: 1.0.0
-  - name: com.unity.ugui
+  - name: com.unity.modules.tilemap
+    version: 1.0.0
+  - name: com.unity.modules.physics2d
+    version: 1.0.0
+  - name: com.unity.modules.uielements
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   keywords:
   - 2d
@@ -4882,11 +5402,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.1.6
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.aseprite@1.1.6
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.aseprite@1.1.6
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.aseprite@1.1.6
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.aseprite
   name: com.unity.2d.aseprite
   displayName: 2D Aseprite Importer
@@ -4902,39 +5426,51 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-pre.1
+    - 1.0.0-pre.2
+    - 1.0.0-pre.3
+    - 1.0.0-pre.4
+    - 1.0.0
+    - 1.0.1
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2
+    - 1.1.3
+    - 1.1.4
+    - 1.1.5
     - 1.1.6
     compatible:
     - 1.1.6
     recommended: 1.1.6
     deprecated: []
   dependencies:
-  - name: com.unity.2d.sprite
-    version: 1.0.0
   - name: com.unity.2d.common
     version: 6.0.6
+  - name: com.unity.2d.sprite
+    version: 1.0.0
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.modules.animation
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.2d.sprite
-    version: 1.0.0
   - name: com.unity.2d.common
     version: 8.0.3
+  - name: com.unity.burst
+    version: 1.8.17
   - name: com.unity.mathematics
     version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.burst
-    version: 1.8.17
   keywords:
   - 2d
   - Aseprite
@@ -4951,7 +5487,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638608683682080000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.aseprite@1.1/manual/index.html
   hasRepository: 1
   repository:
@@ -4973,11 +5509,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.9.2
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.searcher@4.9.2
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.searcher@4.9.2
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.searcher@4.9.2
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -4986,13 +5526,28 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: General search window for use in the Editor. First target use is for
     GraphView node search.
   status: 0
   errors: []
   versions:
     all:
+    - 4.0.0-preview
+    - 4.0.0
+    - 4.0.7-preview
+    - 4.0.7
+    - 4.0.8-preview
+    - 4.0.9
+    - 4.1.0-preview
+    - 4.1.0
+    - 4.2.0
+    - 4.3.0
+    - 4.3.1
+    - 4.3.2
+    - 4.6.0-preview
+    - 4.7.0-preview
+    - 4.9.1
     - 4.9.2
     compatible:
     - 4.9.2
@@ -5013,7 +5568,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637831252240000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -5035,11 +5590,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 8.0.3
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.common@8.0.3
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.common@8.0.3
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.2d.common@8.0.3
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.2d.common
   name: com.unity.2d.common
   displayName: 2D Common
@@ -5048,7 +5607,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 2D
-  type: 
+  type: assets
   description: 2D Common is a package that contains shared functionalities that are
     used by most of the other 2D packages.
   status: 0
@@ -5090,6 +5649,7 @@ m_ResolvedPackages:
     - 6.0.4
     - 6.0.5
     - 6.0.6
+    - 6.0.7
     - 7.0.0-pre.3
     - 7.0.0-pre.4
     - 7.0.0
@@ -5100,44 +5660,49 @@ m_ResolvedPackages:
     - 8.0.0-pre.2
     - 8.0.0
     - 8.0.1
+    - 8.0.2
     - 8.0.3
     - 9.0.0-pre.1
     - 9.0.0-pre.2
     - 9.0.0
     - 9.0.1
     - 9.0.2
+    - 9.0.3
+    - 9.0.4
+    - 9.0.5
+    - 9.0.6
     compatible:
     - 8.0.3
     recommended: 8.0.3
     deprecated: []
   dependencies:
+  - name: com.unity.burst
+    version: 1.7.3
   - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.mathematics
     version: 1.1.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
   - name: com.unity.modules.uielements
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 1.8.17
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.2d.sprite
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.burst
-    version: 1.7.3
-  resolvedDependencies:
-  - name: com.unity.2d.sprite
-    version: 1.0.0
-  - name: com.unity.mathematics
-    version: 1.2.6
   - name: com.unity.modules.uielements
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.animation
-    version: 1.0.0
-  - name: com.unity.burst
-    version: 1.8.17
   keywords:
   - 2d
   registry:
@@ -5150,7 +5715,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638567250090000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.2d.common@8.0/manual/index.html
   hasRepository: 1
   repository:
@@ -5172,11 +5737,15 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.4
   source: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   resolvedPath: C:\Users\ninja\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.collections@1.2.4
 =======
   resolvedPath: C:\Users\Sam Brodersen\SeniorProject\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.collections@1.2.4
 >>>>>>> Stashed changes
+=======
+  resolvedPath: C:\Users\Owner\Documents\GitHub\F24_Spellcraft\Spellcraft\Library\PackageCache\com.unity.collections@1.2.4
+>>>>>>> 7beb45368b4657e969cb8e8d3d028ec959befdd1
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -5185,17 +5754,110 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: A C# collections library providing data structures that can be used
     in jobs, and optimized by Burst compiler.
   status: 0
   errors: []
   versions:
     all:
+    - 0.0.9-preview.1
+    - 0.0.9-preview.2
+    - 0.0.9-preview.3
+    - 0.0.9-preview.4
+    - 0.0.9-preview.5
+    - 0.0.9-preview.6
+    - 0.0.9-preview.7
+    - 0.0.9-preview.8
+    - 0.0.9-preview.9
+    - 0.0.9-preview.10
+    - 0.0.9-preview.11
+    - 0.0.9-preview.12
+    - 0.0.9-preview.13
+    - 0.0.9-preview.14
+    - 0.0.9-preview.15
+    - 0.0.9-preview.16
+    - 0.0.9-preview.17
+    - 0.0.9-preview.18
+    - 0.0.9-preview.19
+    - 0.0.9-preview.20
+    - 0.1.0-preview
+    - 0.1.1-preview
+    - 0.2.0-preview.13
+    - 0.3.0-preview.0
+    - 0.4.0-preview.6
+    - 0.5.0-preview.9
+    - 0.5.1-preview.11
+    - 0.5.2-preview.8
+    - 0.6.0-preview.9
+    - 0.7.0-preview.2
+    - 0.7.1-preview.3
+    - 0.8.0-preview.5
+    - 0.9.0-preview.5
+    - 0.9.0-preview.6
+    - 0.11.0-preview.17
+    - 0.12.0-preview.13
+    - 0.14.0-preview.16
+    - 0.15.0-preview.21
+    - 0.17.0-preview.18
+    - 1.0.0-pre.3
+    - 1.0.0-pre.5
+    - 1.0.0-pre.6
+    - 1.1.0
+    - 1.2.3-pre.1
+    - 1.2.3
     - 1.2.4
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 2.1.0-exp.4
+    - 2.1.0-pre.2
+    - 2.1.0-pre.6
+    - 2.1.0-pre.11
+    - 2.1.0-pre.18
+    - 2.1.1
+    - 2.1.4
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0-exp.1
+    - 2.3.0-pre.3
+    - 2.4.0-exp.2
+    - 2.4.0-pre.2
+    - 2.4.0-pre.5
+    - 2.4.0
+    - 2.4.1
+    - 2.4.2
+    - 2.4.3
+    - 2.5.0-exp.1
+    - 2.5.0-pre.2
+    - 2.5.1
     compatible:
     - 1.2.4
-    recommended: 
+    - 1.3.1
+    - 1.4.0
+    - 1.5.1
+    - 2.1.0-exp.4
+    - 2.1.0-pre.2
+    - 2.1.0-pre.6
+    - 2.1.0-pre.11
+    - 2.1.0-pre.18
+    - 2.1.1
+    - 2.1.4
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0-exp.1
+    - 2.3.0-pre.3
+    - 2.4.0-exp.2
+    - 2.4.0-pre.2
+    - 2.4.0-pre.5
+    - 2.4.0
+    - 2.4.1
+    - 2.4.2
+    - 2.4.3
+    - 2.5.0-exp.1
+    - 2.5.0-pre.2
+    - 2.5.1
+    recommended: 2.5.1
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -5229,7 +5891,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637908244640000000
   documentationUrl: 
   hasRepository: 1
   repository:

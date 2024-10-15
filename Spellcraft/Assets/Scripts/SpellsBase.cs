@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class SpellsBase : MonoBehaviour
@@ -9,51 +10,35 @@ public class SpellsBase : MonoBehaviour
     public Image SpellInfo;
     public GameObject path;
     public GameObject spell;
-    bool stopSpell = true;
-    bool movement = true;
-    bool rotating = false;
-    bool queued = false;
-    float speed = 20f;
-    float rotation = 0f;
+    Animator anim;
+    SpriteRenderer player;
+
+    public Sprite trajectory;
+    public Sprite empty;
+    bool casting;
     void Start()
     {
         SpellInfo.gameObject.SetActive(false);
-        path.gameObject.SetActive(false);
+        path.GetComponent<SpriteRenderer>().sprite = empty;
+        anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         // Calls the function that controls the trajectory's movement
         prepareSpell();
-        // If statement so that the trajectory will show while it's moving but close once it's done
-        if(queued && !rotating) {
-            hideSpellInfo();
-            stopSpell = true;
-            queued = false;
-        }
         // This will show the trajectory and keybinds if either shift key is held
-        else if((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && !rotating) {
+        if((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))) {
             showSpellInfo();
-            stopSpell = false;
         }
         // This will hide the trajectory and keybinds once either shift key is released
         else if((Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))) {
-            if(!rotating) {
-                hideSpellInfo();
-                stopSpell = true;
-            }
-            // The if statement is so that it will only hide it once the trajectory stops moving
-            else {
-                queued = true;
-            }
+            hideSpellInfo();
         }
-        // If the trajectory needs to rotate, it will call the function to rotate it
-        else if(rotating) {
-            rotateSpell();
-        }
-        if(Input.GetKeyUp(KeyCode.E)) {
-            GameObject tempSpell = Instantiate(spell, path.transform.position, path.transform.rotation);
-            tempSpell.transform.right = path.transform.right.normalized;
+        // Spawns a base spell projectile when the 'E' key is pressed
+        if(Input.GetKeyUp(KeyCode.E) && !casting) {
+            StartCoroutine("castSpell");
         }
     }
 
@@ -61,90 +46,60 @@ public class SpellsBase : MonoBehaviour
     void showSpellInfo()
     {
         SpellInfo.gameObject.SetActive(true);
-        path.gameObject.SetActive(true);
+        path.GetComponent<SpriteRenderer>().sprite = trajectory;
     }
 
     // Short function to hide the trajectory and keybinds
     void hideSpellInfo()
     {
         SpellInfo.gameObject.SetActive(false);
-        path.gameObject.SetActive(false);
+        path.GetComponent<SpriteRenderer>().sprite = empty;
     }
 
-    // Not-so-short function to calculate where the trajectory should go based on the keys input
+    // short function to calculate where the trajectory should go based on the mouse pointer's position
     void prepareSpell()
     {
-        // This just checks if we are currently showing the trajectory or not and prevents the player from moving so it doesn't mess up the trajectory
-        if(!stopSpell && movement) {
-            // Override movement script
-            movement = false;
-        }
-        // If they can't move, than we check if all 8 key combinations
-        else if(!movement) {
-            // This checks if they are holding down a "Left" key (e.g. LeftArrowKey or A)
-            if(Input.GetAxisRaw("Horizontal") < 0) {
-                // This checks if they are holding down a "Down" key in addition (e.g. DownArrowKey or S)
-                if(Input.GetAxisRaw("Vertical") > 0) {
-                    rotation = 45f;
-                    rotating = true;
-                }
-                // This checks if they are holding down an "Up" key in addition (e.g. UpArrowKey or W)
-                else if(Input.GetAxisRaw("Vertical") < 0) {
-                    rotation = 135f;
-                    rotating = true;
-                }
-                // If they aren't holding an up or down key, then they are only looking to check left
-                else {
-                    rotation = 90f;
-                    rotating = true;
-                }
-            }
-            // Since they aren't holding left, we wanna check if they are holding a "Right" key (e.g. RightArrowKey or D)
-            else if(Input.GetAxisRaw("Horizontal") > 0) {
-                // Checks for down in addition to right
-                if(Input.GetAxisRaw("Vertical") < 0) {
-                    rotation = 225f;
-                    rotating = true;
-                }
-                // Checks for up in addition to right
-                else if(Input.GetAxisRaw("Vertical") > 0) {
-                    rotation = 315f;
-                    rotating = true;
-                }
-                // Since they aren't holding up or down, they only want right
-                else {
-                    rotation = 270f;
-                    rotating = true;
-                }
-            }
-            // Since they aren't holding left or right, we no longer check for combinations and only up
-            else if(Input.GetAxisRaw("Vertical") > 0) {
-                rotation = 0f;
-                rotating = true;
-            }
-            // Since they aren't holding left, right, or up, we check if they are holding down. Otherwise, they aren't holding any keys we care about
-            else if(Input.GetAxisRaw("Vertical") < 0) {
-                rotation = 180f;
-                rotating = true;
-            }
-        }
-        // Since they aren't being shown the menu anymore, we return movement control back
-        else if(stopSpell && !movement) {
-            // Return movement script permissions
-            movement = true;
-        }
+        // Takes in the mouse's current position
+        Vector3 mousePosition = Input.mousePosition;
+        // Translates the mouse's current position into something applicable to the game's window
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        // Sets x and y of the mouse's position to the distance between it and the trajectory's current position
+        mousePosition.x = mousePosition.x - path.transform.position.x;
+        mousePosition.y = mousePosition.y - path.transform.position.y;
+        // Calculates the angle of the where the mouse is in relation to where the trajectory line is (minus 90 degrees for some reason)
+        float angle = (Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg) - 90f;
+        // Sets the trajectory line's rotation to be on the mouse's position and since we can't snap the mouse, it will look smooth
+        path.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
-    // Function that performs the smooth rotation
-    void rotateSpell()
+    IEnumerator castSpell()
     {
-        // This checks if it needs to rotate anymore
-        if(path.transform.rotation == Quaternion.Euler(0f, 0f, rotation)) {
-            rotating = false;
+        GameObject tempSpell = Instantiate(spell, path.transform.position, path.transform.rotation);
+        tempSpell.transform.right = path.transform.right.normalized;
+        float angle = path.transform.rotation.eulerAngles.z;
+        Debug.Log("Pointing at " + angle + " degrees");
+        if((angle > 0 && angle < 45) || (angle < 360 && angle > 315)) {
+            anim.SetBool("CastUp", true);
+            player.flipX = false;
         }
-        // Since it does need to rotate, we perform the rotation
-        else {
-            path.transform.rotation = Quaternion.Slerp(path.transform.rotation, Quaternion.Euler(0f, 0f, rotation), speed * Time.deltaTime);
+        else if((angle >= 45 && angle <= 135)) {
+            anim.SetBool("CastSide", true);
+            player.flipX = false;
         }
+        else if((angle > 135 && angle < 225)) {
+            anim.SetBool("CastDown", true);
+            player.flipX = false;
+        }
+        else if((angle > 225 && angle < 315)) {
+            anim.SetBool("CastSide", true);
+            player.flipX = true;
+        }
+        casting = true;
+        yield return new WaitForSeconds(0.5f);
+        casting = false;
+        anim.SetBool("CastSide", false);
+        anim.SetBool("CastUp", false);
+        anim.SetBool("CastDown", false);
+        player.flipX = false;
     }
 }
