@@ -14,7 +14,7 @@ public class SpellsBase : MonoBehaviour
 
     public Sprite trajectory;
     public Sprite empty;
-    bool casting;
+    public bool casting;
     int spellIndex;
     void Start()
     {
