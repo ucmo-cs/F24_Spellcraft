@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EnemiesGhoul_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6baf6c0980df4575a4e50078e16a67f
+      internalID: -998499703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 131
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a904a87f62f9042d1915068d77eb6bda
+      internalID: -1948690554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 131
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf1b38e83bdb4cc2bccdafa02773b2e
+      internalID: 847115530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 131
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b936dfd1fc3be44c4b7be705994bb470
+      internalID: -408108787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2056354a25b4e4a94894e390f6a10f22
+      internalID: -179865261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 67
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033163bf257024eab98eaecd4679af6a
+      internalID: 2005615177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 67
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70aec387a9ad148248c60e793e5c33f1
+      internalID: -27286826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 67
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f3a7d28782c48bf83c13ac41873515
+      internalID: -1989309658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9454d6bc7293042f7ba4c6da3a60db82
+      internalID: -1297402214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 3
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9489a2ca97ba4272971f3fc91f0df86
+      internalID: -46199829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 3
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5510de21c61e44fb86b9f4fa43a137c
+      internalID: -400896601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesGhoul_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 3
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89234497f30c24dfe9a5ab12d46f2520
+      internalID: 1757798348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +358,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EnemiesGhoul_0: -998499703
+      EnemiesGhoul_1: -1948690554
+      EnemiesGhoul_10: -400896601
+      EnemiesGhoul_11: 1757798348
+      EnemiesGhoul_2: 847115530
+      EnemiesGhoul_3: -408108787
+      EnemiesGhoul_4: -179865261
+      EnemiesGhoul_5: 2005615177
+      EnemiesGhoul_6: -27286826
+      EnemiesGhoul_7: -1989309658
+      EnemiesGhoul_8: -1297402214
+      EnemiesGhoul_9: -46199829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

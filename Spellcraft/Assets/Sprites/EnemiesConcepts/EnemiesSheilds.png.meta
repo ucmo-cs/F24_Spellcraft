@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EnemiesSheilds_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 135
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0179e0ef60b544ccf9e42bc58a8d6bf7
+      internalID: -921660059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 135
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0142c4722d7b74c059f42e50899229e4
+      internalID: -615329957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 134
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d75476f0aec7402aa86cf617a1e3ca3
+      internalID: 636708109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_3
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 135
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04c4accf5dd846ef8f52ff65b39c6a3
+      internalID: -719047130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 70
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfe4185945dc43c8b83b56dcd93ae95
+      internalID: 435304519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 70
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65a55d295e3f41c7bcbb466b648c925
+      internalID: 745562179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 70
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fecf7fdaaa10480a8e23bd6de532ec3
+      internalID: 585092501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 70
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd91bc276e5e54ee39c1a47510edcc33
+      internalID: 1636858427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 5
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562132fb097074dea89ca63d7f7a96ea
+      internalID: -1623838084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 5
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4715afc0da3f47b5a1cf6e32295a9ee
+      internalID: -1788732216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_10
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 5
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f283acc521ed24b05831281ad480452b
+      internalID: -190581099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemiesSheilds_11
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 5
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd48e2beda904426984b0cba1d862d5b
+      internalID: -2071645838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +358,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EnemiesSheilds_0: -921660059
+      EnemiesSheilds_1: -615329957
+      EnemiesSheilds_10: -190581099
+      EnemiesSheilds_11: -2071645838
+      EnemiesSheilds_2: 636708109
+      EnemiesSheilds_3: -719047130
+      EnemiesSheilds_4: 435304519
+      EnemiesSheilds_5: 745562179
+      EnemiesSheilds_6: 585092501
+      EnemiesSheilds_7: 1636858427
+      EnemiesSheilds_8: -1623838084
+      EnemiesSheilds_9: -1788732216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
