@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Collectible
   - Goal
+  - Resize
+  - Freeze
+  - Remote Control
+  - Telekinesis
+  - Gateway
+  - Fire
   layers:
   - Default
   - TransparentFX

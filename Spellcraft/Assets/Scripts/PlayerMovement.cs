@@ -4,73 +4,75 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Movement speed
-    private Animator animator; // Reference to Animator component
-
-    private Vector2 movement; // To store player movement input
-
-    // Initialize components in Start
+    Rigidbody2D rb;
+    Animator anim;
+    SpriteRenderer sr;
+    public float speed = 5f;
+    float moveHorizontal, moveVertical;
+    SpellsBase spellScript;
     void Start()
     {
-        // Automatically find the Animator component
-        animator = GetComponent<Animator>();
-        if (animator == null)
-        {
-            Debug.LogError("Animator component missing from this GameObject!");
-        }
+        spellScript = transform.Find("Trajectory").GetComponent<SpellsBase>();
+        rb = this.GetComponent<Rigidbody2D>();
+        anim = this.GetComponent<Animator>();
+        sr = this.GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        // Get player input from WASD/Arrow keys
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        // Normalize movement to avoid faster diagonal movement
-        if (movement.magnitude > 1)
-        {
-            movement.Normalize();
+        // Animates the character moving up
+        if(Input.GetAxisRaw("Vertical") > 0) {
+            Vector3 temp = this.transform.position; ;
+            temp.y += speed * Time.deltaTime;
+            this.transform.position = temp;
+            if(!spellScript.casting) {
+                anim.SetBool("Down", false);
+                anim.SetBool("Up", true);
+                anim.SetBool("Side", false);
+                sr.flipX = false;
+            }
         }
-
-        // Move the character by changing the Transform's position
-        Vector3 newPosition = transform.position + new Vector3(movement.x, movement.y, 0) * moveSpeed * Time.deltaTime;
-        transform.position = newPosition;
-
-
-        // Check movement direction and set animation parameters
-        if (movement.y > 0)
-        {
-            // Moving up
-            animator.SetBool("Up", true);
-            animator.SetBool("Down", false);
-            animator.SetBool("Side", false);
+        // Animates the character moving down
+        else if(Input.GetAxisRaw("Vertical") < 0) {
+            Vector3 temp = this.transform.position; ;
+            temp.y -= speed * Time.deltaTime;
+            this.transform.position = temp;
+            if(!spellScript.casting) {
+                anim.SetBool("Down", true);
+                anim.SetBool("Up", false);
+                anim.SetBool("Side", false);
+                sr.flipX = false;
+            }
         }
-        else if (movement.y < 0)
-        {
-            // Moving down
-            animator.SetBool("Up", false);
-            animator.SetBool("Down", true);
-            animator.SetBool("Side", false);
+        // Animates the character moving right
+        if(Input.GetAxisRaw("Horizontal") > 0) {
+            Vector3 temp = this.transform.position; ;
+            temp.x += speed * Time.deltaTime;
+            this.transform.position = temp;
+            if(!spellScript.casting) {
+                anim.SetBool("Down", false);
+                anim.SetBool("Up", false);
+                anim.SetBool("Side", true);
+                sr.flipX = true;
+            }
         }
-        else if (movement.x != 0)
-        {
-            // Moving sideways
-            animator.SetBool("Up", false);
-            animator.SetBool("Down", false);
-            animator.SetBool("Side", true);
-
-            // Flip character based on movement direction
-            if (movement.x > 0)
-                transform.localScale = new Vector3(-2, 2, 2); // Facing right
-            else if (movement.x < 0)
-                transform.localScale = new Vector3(2, 2, 2); // Facing left
+        // Animates the character moving left
+        else if(Input.GetAxisRaw("Horizontal") < 0) {
+            Vector3 temp = this.transform.position; ;
+            temp.x -= speed * Time.deltaTime;
+            this.transform.position = temp;
+            if(!spellScript.casting) {
+                anim.SetBool("Down", false);
+                anim.SetBool("Up", false);
+                anim.SetBool("Side", true);
+                sr.flipX = false;
+            }
         }
-        else
-        {
-            // If no movement, stop all animations
-            animator.SetBool("Up", false);
-            animator.SetBool("Down", false);
-            animator.SetBool("Side", false);
+        // Cancels movement animations so that we don't have movement when we aren't moving
+        if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0) {
+            anim.SetBool("Down", false);
+            anim.SetBool("Up", false);
+            anim.SetBool("Side", false);
         }
     }
 }
