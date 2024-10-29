@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreManagerScript : MonoBehaviour
 {
+    public AudioSource Audio;
     public Text scoreText;
     public GameObject victoryCanvas;
     public int score;
@@ -23,5 +24,9 @@ public class ScoreManagerScript : MonoBehaviour
             Time.timeScale = 0f;        // Pause game
             victoryCanvas.SetActive(true);
         }
+    }
+    public void sounder()
+    {
+        Audio.Play();
     }
 }

@@ -6,12 +6,14 @@ using UnityEngine;
 public class SlimeScript : MonoBehaviour
 {
     Rigidbody2D rb;
+    AudioSource Audio;
     public GameObject ScoreManager;
     public float distance = 0.5f;
     public float moveSpeed = 3f;
     Vector3 target;
     void Awake()
     {
+        Audio = gameObject.GetComponent<AudioSource>();
         target = transform.position;
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine("moveSlime");
@@ -63,6 +65,7 @@ public class SlimeScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Fire") {
             ScoreManager.GetComponent<ScoreManagerScript>().score += 1;
+            ScoreManager.GetComponent<ScoreManagerScript>().sounder();
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }

@@ -11,6 +11,7 @@ public class SpellsBase : MonoBehaviour
     public GameObject[] spells;
     Animator anim;
     SpriteRenderer player;
+    AudioSource Audio;
 
     public Sprite trajectory;
     public Sprite empty;
@@ -22,6 +23,7 @@ public class SpellsBase : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = empty;
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
+        Audio = gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -97,6 +99,7 @@ public class SpellsBase : MonoBehaviour
 
     IEnumerator castSpell()
     {
+        Audio.Play();
         // Creating the spell projectile and making sure it's facing the correct way
         GameObject tempSpell = Instantiate(spells[spellIndex], transform.position, transform.rotation);
         tempSpell.transform.right = transform.right.normalized;
