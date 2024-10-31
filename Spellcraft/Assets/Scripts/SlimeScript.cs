@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.ReorderableList;
 using UnityEditor.Rendering;
 using UnityEngine;
 
@@ -9,13 +10,18 @@ public class SlimeScript : MonoBehaviour
     public GameObject ScoreManager;
     public float distance = 0.5f;
     public float moveSpeed = 3f;
+    bool frozen;
     Vector3 target;
+    Animator anim;
+    SpriteRenderer sr;
     void Awake()
     {
         target = transform.position;
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine("moveSlime");
         ScoreManager = GameObject.Find("ScoreManager");
+        anim = gameObject.GetComponent<Animator>();
+        sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -28,43 +34,73 @@ public class SlimeScript : MonoBehaviour
             target.y = -3.8f;
         else if(target.y > 4.5f)
             target.y = 4.5f;
-        transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+        if(!frozen) {
+            transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+        }
+
+        if(target == transform.position) {
+            anim.SetBool("Side", false);
+            anim.SetBool("Down", false);
+            anim.SetBool("Up", false);
+        }
     }
 
     IEnumerator moveSlime()
     {
+        yield return new WaitForSeconds(3f);
         switch(Random.Range(0, 3)) {
             case 0:
-                //rb.MovePosition(new Vector2(transform.position.x + distance, transform.position.y));
-                //transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x + distance, transform.position.y), moveSpeed * Time.deltaTime);
+                // Left
+                anim.SetBool("Side", true);
+                sr.flipX = false;
                 target = new Vector3(transform.position.x - distance, transform.position.y);
                 break;
             case 1:
-                //rb.MovePosition(new Vector2(transform.position.x - distance, transform.position.y));
-                //transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x - distance, transform.position.y), moveSpeed * Time.deltaTime);
+                // Right
+                anim.SetBool("Side", true);
+                sr.flipX = true;
                 target = new Vector3(transform.position.x + distance, transform.position.y);
                 break;
             case 2:
-                //rb.MovePosition(new Vector2(transform.position.x, transform.position.y + distance));
-                //transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y + distance), moveSpeed * Time.deltaTime);
+                // Down
+                anim.SetBool("Down", true);
+                sr.flipX = false;
                 target = new Vector3(transform.position.x, transform.position.y - distance);
                 break;
             case 3:
-                //rb.MovePosition(new Vector2(transform.position.x, transform.position.y - distance));
-                //transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y - distance), moveSpeed * Time.deltaTime);
+                // Up
+                anim.SetBool("Up", true);
+                sr.flipX = false;
                 target = new Vector3(transform.position.x, transform.position.y + distance);
                 break;
         }
-        yield return new WaitForSeconds(3f);
         StartCoroutine("moveSlime");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Fire") {
-            ScoreManager.GetComponent<ScoreManagerScript>().score += 1;
-            Destroy(collision.gameObject);
-            Destroy(this.gameObject);
+        switch(collision.gameObject.tag) {
+            case "Fire":
+                if(!frozen) {
+                    ScoreManager.GetComponent<ScoreManagerScript>().score += 1;
+                    Destroy(collision.gameObject);
+                    Destroy(this.gameObject);
+                }
+                else {
+                    StartCoroutine("moveSlime");
+                    anim.SetBool("Frozen", false);
+                    frozen = false;
+                    //sr.flipX = !sr.flipX;
+                    Destroy(collision.gameObject);
+                }
+                break;
+            case "Freeze":
+                StopCoroutine("moveSlime");
+                anim.SetBool("Frozen", true);
+                frozen = true;
+                //sr.flipX = !sr.flipX;
+                Destroy(collision.gameObject);
+                break;
         }
     }
 }

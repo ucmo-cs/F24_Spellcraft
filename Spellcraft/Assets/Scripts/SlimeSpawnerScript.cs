@@ -13,7 +13,7 @@ public class SlimeSpawnerScript : MonoBehaviour
     IEnumerator spawnSlime()
     {
         Instantiate(Slime);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         StartCoroutine("spawnSlime");
     }
 }
