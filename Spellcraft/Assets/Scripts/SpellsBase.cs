@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class SpellsBase : MonoBehaviour
 {
-    public Image SpellInfo;
+    //public Image SpellInfo;
     public GameObject[] spells;
     Animator anim;
     SpriteRenderer player;
@@ -18,7 +18,7 @@ public class SpellsBase : MonoBehaviour
     int spellIndex;
     void Start()
     {
-        SpellInfo.gameObject.SetActive(false);
+        //SpellInfo.gameObject.SetActive(false);
         GetComponent<SpriteRenderer>().sprite = empty;
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
@@ -68,14 +68,14 @@ public class SpellsBase : MonoBehaviour
     // Short function to show the trajectory and keybinds
     void showSpellInfo()
     {
-        SpellInfo.gameObject.SetActive(true);
+        //SpellInfo.gameObject.SetActive(true);
         GetComponent<SpriteRenderer>().sprite = trajectory;
     }
 
     // Short function to hide the trajectory and keybinds
     void hideSpellInfo()
     {
-        SpellInfo.gameObject.SetActive(false);
+        //SpellInfo.gameObject.SetActive(false);
         GetComponent<SpriteRenderer>().sprite = empty;
     }
 

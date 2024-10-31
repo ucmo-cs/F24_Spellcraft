@@ -4,12 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Fire
-  - Freeze
+  - Collectible
+  - Goal
   - Resize
-  - Gateway
-  - Telekinesis
+  - Freeze
   - Remote Control
+  - Telekinesis
+  - Gateway
+  - Fire
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6523364777225302394}
   - component: {fileID: 1922813298754131101}
   - component: {fileID: 2192861760859220593}
+  - component: {fileID: -5097808427171522046}
   m_Layer: 0
   m_Name: FireProjectile
   m_TagString: Fire
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2043886823, guid: a11244747ac8246f49b10a9b8b359ae6, type: 3}
+  m_Sprite: {fileID: 1244702824, guid: a11244747ac8246f49b10a9b8b359ae6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,14 +96,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5702571163397520933}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -147,3 +148,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f4ef3bff8d2234a863908edfb96b36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &-5097808427171522046
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5702571163397520933}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: fc8e44a53ff969945b54e734b889cf4c, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.12
