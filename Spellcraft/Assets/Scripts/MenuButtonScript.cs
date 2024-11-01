@@ -10,6 +10,7 @@ public class MenuButtonScript : MonoBehaviour
     public Button levelSelect;
     public Button settings;
     public Button exit;
+    public Button tutorial;
     public Button world1;
     public Button world2;
     public Button world3;
@@ -24,6 +25,7 @@ public class MenuButtonScript : MonoBehaviour
         levelSelect.onClick.AddListener(OnButton1Click);
         settings.onClick.AddListener(OnButton2Click);
         exit.onClick.AddListener(OnButton3Click);
+        tutorial.onClick.AddListener(OnButton8Click);
         world1.onClick.AddListener(OnButton4Click);
         world2.onClick.AddListener(OnButton5Click);
         world3.onClick.AddListener(OnButton6Click);
@@ -85,5 +87,10 @@ public class MenuButtonScript : MonoBehaviour
         Debug.Log("Button 3 Clicked!");
         mainCanvas.SetActive(true);
         worldCanvas.SetActive(false);
+    }
+
+    void OnButton8Click()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }
