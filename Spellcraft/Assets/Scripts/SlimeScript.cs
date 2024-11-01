@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEditor.Rendering;
 using UnityEngine;
 
@@ -11,8 +12,10 @@ public class SlimeScript : MonoBehaviour
     public float distance = 0.5f;
     public float moveSpeed = 3f;
     Vector3 target;
+    Vector2 size;
     void Awake()
     {
+        size = new Vector2(transform.localScale.x, transform.localScale.y);
         Audio = gameObject.GetComponent<AudioSource>();
         target = transform.position;
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -69,5 +72,20 @@ public class SlimeScript : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
+        if(collision.gameObject.tag == "Resize") {
+            if (transform.localScale.x == size.x)
+            {
+                transform.localScale = new Vector3 (size.x*2,size.y*2,transform.localScale.z);
+            }
+            else if (transform.localScale.x > size.x)
+            {
+                transform.localScale = new Vector3(size.x / 2, size.y / 2, transform.localScale.z);
+            }
+            else {
+                transform.localScale = new Vector3(size.y, size.x, transform.localScale.z);
+            }
+            Destroy(collision.gameObject);
+        }
+
     }
 }
