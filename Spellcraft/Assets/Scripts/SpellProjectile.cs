@@ -7,6 +7,7 @@ public class SpellProjectile : MonoBehaviour
     // Speed at which the projectile will fly
     float velocity = 10f;
     Rigidbody2D rb;
+    public AudioClip audioClip;
 
     void Start()
     {
