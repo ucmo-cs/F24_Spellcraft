@@ -37,7 +37,7 @@ public class SlimeScript : MonoBehaviour
             target.y = -3.8f;
         else if(target.y > 4.5f)
             target.y = 4.5f;
-        if(!frozen) {
+        if(!frozen && !controlled) {
             transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
         }
 
@@ -49,8 +49,9 @@ public class SlimeScript : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Escape) && controlled) {
             controlled = false;
+            StopCoroutine("moveSlime");
             StartCoroutine("moveSlime");
-            frozen = false;
+            player.GetComponent<PlayerMovement>().enabled = true;
             player.GetComponent<PlayerMovement>().changePlayer(player);
             target = transform.position;
         }
@@ -98,6 +99,7 @@ public class SlimeScript : MonoBehaviour
                     Destroy(this.gameObject);
                 }
                 else {
+                    StopCoroutine("moveSlime");
                     StartCoroutine("moveSlime");
                     anim.SetBool("Frozen", false);
                     frozen = false;
@@ -113,8 +115,14 @@ public class SlimeScript : MonoBehaviour
             case "Remote Control":
                 StopCoroutine("moveSlime");
                 Destroy(collision.gameObject);
-                player.GetComponent<PlayerMovement>().changePlayer(this.gameObject);
-                frozen = true;
+                if(!frozen) {
+                    player.GetComponent<PlayerMovement>().changePlayer(this.gameObject);
+                }
+                else {
+                    GameObject.Find("Trajectory").GetComponent<SpriteRenderer>().sprite = GameObject.Find("Trajectory").GetComponent<SpellsBase>().empty;
+                    GameObject.Find("Trajectory").GetComponent<SpellsBase>().enabled = false;
+                    player.GetComponent<PlayerMovement>().enabled = false;
+                }
                 controlled = true;
                 break;
         }
