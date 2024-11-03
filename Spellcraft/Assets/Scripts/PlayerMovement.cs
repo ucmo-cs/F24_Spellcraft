@@ -4,27 +4,26 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
     Animator anim;
     SpriteRenderer sr;
     public float speed = 5f;
-    float moveHorizontal, moveVertical;
     SpellsBase spellScript;
-    void Start()
+    GameObject player;
+    void Awake()
     {
         spellScript = transform.Find("Trajectory").GetComponent<SpellsBase>();
-        rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
         sr = this.GetComponent<SpriteRenderer>();
+        player = this.gameObject;
     }
 
     void Update()
     {
         // Animates the character moving up
         if(Input.GetAxisRaw("Vertical") > 0) {
-            Vector3 temp = this.transform.position; ;
+            Vector3 temp = player.transform.position; ;
             temp.y += speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
             if(!spellScript.casting) {
                 anim.SetBool("Down", false);
                 anim.SetBool("Up", true);
@@ -34,9 +33,9 @@ public class PlayerMovement : MonoBehaviour
         }
         // Animates the character moving down
         else if(Input.GetAxisRaw("Vertical") < 0) {
-            Vector3 temp = this.transform.position; ;
+            Vector3 temp = player.transform.position; ;
             temp.y -= speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
             if(!spellScript.casting) {
                 anim.SetBool("Down", true);
                 anim.SetBool("Up", false);
@@ -46,9 +45,9 @@ public class PlayerMovement : MonoBehaviour
         }
         // Animates the character moving right
         if(Input.GetAxisRaw("Horizontal") > 0) {
-            Vector3 temp = this.transform.position; ;
+            Vector3 temp = player.transform.position; ;
             temp.x += speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
             if(!spellScript.casting) {
                 anim.SetBool("Down", false);
                 anim.SetBool("Up", false);
@@ -58,9 +57,9 @@ public class PlayerMovement : MonoBehaviour
         }
         // Animates the character moving left
         else if(Input.GetAxisRaw("Horizontal") < 0) {
-            Vector3 temp = this.transform.position; ;
+            Vector3 temp = player.transform.position; ;
             temp.x -= speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
             if(!spellScript.casting) {
                 anim.SetBool("Down", false);
                 anim.SetBool("Up", false);
@@ -74,5 +73,19 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Up", false);
             anim.SetBool("Side", false);
         }
+    }
+
+    public void changePlayer(GameObject play)
+    {
+        if(play == this.gameObject) {
+            GameObject.Find("Trajectory").GetComponent<SpellsBase>().enabled = true;
+        }
+        else {
+            GameObject.Find("Trajectory").GetComponent<SpriteRenderer>().sprite = GameObject.Find("Trajectory").GetComponent<SpellsBase>().empty;
+            GameObject.Find("Trajectory").GetComponent<SpellsBase>().enabled = false;
+        }
+        player = play;
+        anim = play.GetComponent<Animator>();
+        sr = play.GetComponent<SpriteRenderer>();
     }
 }

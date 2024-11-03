@@ -8,9 +8,10 @@ public class SlimeScript : MonoBehaviour
 {
     Rigidbody2D rb;
     public GameObject ScoreManager;
+    GameObject player;
     public float distance = 0.5f;
     public float moveSpeed = 3f;
-    bool frozen;
+    bool frozen, controlled;
     Vector3 target;
     Animator anim;
     SpriteRenderer sr;
@@ -22,6 +23,8 @@ public class SlimeScript : MonoBehaviour
         ScoreManager = GameObject.Find("ScoreManager");
         anim = gameObject.GetComponent<Animator>();
         sr = gameObject.GetComponent<SpriteRenderer>();
+        controlled = false;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -42,6 +45,14 @@ public class SlimeScript : MonoBehaviour
             anim.SetBool("Side", false);
             anim.SetBool("Down", false);
             anim.SetBool("Up", false);
+        }
+
+        if(Input.GetKey(KeyCode.Escape) && controlled) {
+            controlled = false;
+            StartCoroutine("moveSlime");
+            frozen = false;
+            player.GetComponent<PlayerMovement>().changePlayer(player);
+            target = transform.position;
         }
     }
 
@@ -90,7 +101,6 @@ public class SlimeScript : MonoBehaviour
                     StartCoroutine("moveSlime");
                     anim.SetBool("Frozen", false);
                     frozen = false;
-                    //sr.flipX = !sr.flipX;
                     Destroy(collision.gameObject);
                 }
                 break;
@@ -98,8 +108,14 @@ public class SlimeScript : MonoBehaviour
                 StopCoroutine("moveSlime");
                 anim.SetBool("Frozen", true);
                 frozen = true;
-                //sr.flipX = !sr.flipX;
                 Destroy(collision.gameObject);
+                break;
+            case "Remote Control":
+                StopCoroutine("moveSlime");
+                Destroy(collision.gameObject);
+                player.GetComponent<PlayerMovement>().changePlayer(this.gameObject);
+                frozen = true;
+                controlled = true;
                 break;
         }
     }
