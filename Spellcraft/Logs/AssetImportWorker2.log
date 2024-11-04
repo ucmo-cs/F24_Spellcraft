@@ -1,0 +1,578 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.46f1 (8e9b8558c41a) revision 9345925'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16244 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\ZDMit\Desktop\Unity Installations\2022.3.46f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51552
+Successfully changed project path to: C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft
+C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [14508]  Target information:
+
+Player connection [14508]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3413530330 [EditorId] 3413530330 [Version] 1048832 [Id] WindowsEditor(7,Zach) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14508]  * "[IP] 153.91.221.107 [Port] 0 [Flags] 2 [Guid] 3413530330 [EditorId] 3413530330 [Version] 1048832 [Id] WindowsEditor(7,Zach) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [14508] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14508] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 31.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.46f1 (8e9b8558c41a)
+[Subsystems] Discovering subsystems at path C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 Super with Max-Q Design (ID=0x1e93)
+    Vendor:   NVIDIA
+    VRAM:     7987 MB
+    Driver:   32.0.15.6109
+Initialize mono
+Mono path[0] = 'C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.029429 seconds.
+- Loaded All Assemblies, in  0.849 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.654 seconds
+Domain Reload Profiling: 1498ms
+	BeginReloadAssembly (264ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (152ms)
+	LoadAllAssembliesAndSetupDomain (313ms)
+		LoadAssemblies (259ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (308ms)
+			TypeCache.Refresh (306ms)
+				TypeCache.ScanAssembly (280ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (655ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (537ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (367ms)
+			ProcessInitializeOnLoadMethodAttributes (126ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.895 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.631 seconds
+Domain Reload Profiling: 3515ms
+	BeginReloadAssembly (475ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (28ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (110ms)
+	LoadAllAssembliesAndSetupDomain (1203ms)
+		LoadAssemblies (889ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (542ms)
+			TypeCache.Refresh (456ms)
+				TypeCache.ScanAssembly (421ms)
+			ScanForSourceGeneratedMonoScriptInfo (61ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1632ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1269ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (156ms)
+			ProcessInitializeOnLoadAttributes (969ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 17.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5679 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (345.7 KB). Loaded Objects now: 6148.
+Memory consumption went from 216.8 MB to 216.5 MB.
+Total: 10.609800 ms (FindLiveObjects: 0.799000 ms CreateObjectMapping: 0.844800 ms MarkObjects: 8.674300 ms  DeleteObjects: 0.289400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1390519.256342 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Material/MT Props.mat
+  artifactKey: Guid(a9f84881abde25b48904c0ff67bca145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Material/MT Props.mat using Guid(a9f84881abde25b48904c0ff67bca145) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'bc7edf649b5cfa99a977423f32351cfc') in 0.555234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 16.503179 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Texture/TX Player.png
+  artifactKey: Guid(ec47f75fe8aff1644ac73998f4ad31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Texture/TX Player.png using Guid(ec47f75fe8aff1644ac73998f4ad31b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8d71f9f1bd241c18fc370bdcf6706c17') in 0.175417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Texture/TX Struct.png
+  artifactKey: Guid(dda6bbdb704d84847b38f9eced72bf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Texture/TX Struct.png using Guid(dda6bbdb704d84847b38f9eced72bf59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '6679ecfa5d9ac9d61978a3432a141ad4') in 0.199992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png
+  artifactKey: Guid(1c9ed9d1200c29d4cbfd2071028c1cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png using Guid(1c9ed9d1200c29d4cbfd2071028c1cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '41461ffa0dbc3d168840ad9f406aacfb') in 0.224127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 66
+========================================================================
+Received Import Request.
+  Time since last request: 19.829676 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground.prefab
+  artifactKey: Guid(d4e83863d09313942bd8054738fe5a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground.prefab using Guid(d4e83863d09313942bd8054738fe5a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '88a773e62a617e9b098e1dc3a02f77dd') in 0.183558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 112
+========================================================================
+Received Import Request.
+  Time since last request: 3.292580 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 1.asset
+  artifactKey: Guid(ae68d965a4218a94ca2134f0ae2007c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 1.asset using Guid(ae68d965a4218a94ca2134f0ae2007c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '69c9ec498616fde74c870085ae8d2605') in 0.154542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 15.asset
+  artifactKey: Guid(70b8e49e6af191c4c987c778977a5dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 15.asset using Guid(70b8e49e6af191c4c987c778977a5dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '712bf6ffe67ff351d72d3ce9840cde47') in 0.033650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 5.asset
+  artifactKey: Guid(54b6893f2afe6354ebdccde3f53a6a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 5.asset using Guid(54b6893f2afe6354ebdccde3f53a6a65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c26c34c58e095374f638b7c44fb4700c') in 0.019717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 9.asset
+  artifactKey: Guid(1d9b2716edff8d7418583a4c52cba7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 9.asset using Guid(1d9b2716edff8d7418583a4c52cba7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'eee6d1e6ecb7438ee58a07b8aa47ee1c') in 0.024574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_61.asset
+  artifactKey: Guid(780dbc86f9d96cb4ea6eb80cedc5297f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_61.asset using Guid(780dbc86f9d96cb4ea6eb80cedc5297f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'bf18a25aad89ab18170fd7995d1cae83') in 0.019556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 12.asset
+  artifactKey: Guid(f332210fa22ba8549b6ac4d19975e7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 12.asset using Guid(f332210fa22ba8549b6ac4d19975e7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '49ea1e9af18f55daab27c9c00804f13f') in 0.020552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_55.asset
+  artifactKey: Guid(7545dac8dcb9b6a48aa8ff5fd623e811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_55.asset using Guid(7545dac8dcb9b6a48aa8ff5fd623e811) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2f0e5b8291ade27fbcfde5c61c95559b') in 0.021185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_35.asset
+  artifactKey: Guid(9d6c18cd380d5004c9f822deee6e523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_35.asset using Guid(9d6c18cd380d5004c9f822deee6e523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'cad5a51fe9304e93f43637af49b05312') in 0.017139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_54.asset
+  artifactKey: Guid(adff4849f9e61d242bac11b47989a904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_54.asset using Guid(adff4849f9e61d242bac11b47989a904) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4eff9bd6dbcc7b39da74988d6885ff9b') in 0.019415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 14.asset
+  artifactKey: Guid(f705d9780fd6a6847a33cc62a5c4b9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass 14.asset using Guid(f705d9780fd6a6847a33cc62a5c4b9ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '23603655f3f72481020a8f77cc2ebca4') in 0.021054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 13.asset
+  artifactKey: Guid(57824cd7e1612d14090d617a256eca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Flower 13.asset using Guid(57824cd7e1612d14090d617a256eca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e9138797e6244d91cddf8628511a35f6') in 0.016849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_51.asset
+  artifactKey: Guid(3d9dc795275adfd48af7618f29844554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass_51.asset using Guid(3d9dc795275adfd48af7618f29844554) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'd550bdb52785f4b54e1d30dcb1e5d13d') in 0.016578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 3.asset
+  artifactKey: Guid(32a9ac03c75f1f34991a1ef854a8eb4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Grass/TX Tileset Grass Pavement 3.asset using Guid(32a9ac03c75f1f34991a1ef854a8eb4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7e6fb836531663b4c1069836c8d32a29') in 0.017512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.507003 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_1.asset
+  artifactKey: Guid(25ecd62c3dae4eb418ab0ff556e51195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_1.asset using Guid(25ecd62c3dae4eb418ab0ff556e51195) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5be4b99e7fb30d3dea6f56f03535a3fe') in 0.075961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_30.asset
+  artifactKey: Guid(ff09438222d182d478c56becdab860de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_30.asset using Guid(ff09438222d182d478c56becdab860de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ff81270efa34e1a53c5a9baa68d422ff') in 0.038572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_43.asset
+  artifactKey: Guid(eef9691b1631014439dae500aba2926f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_43.asset using Guid(eef9691b1631014439dae500aba2926f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2caa9f05cf42ea00b087c92ca1d7e8cf') in 0.032741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_11.asset
+  artifactKey: Guid(58ecfed316f7f6e4eb4335ccee5a605f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_11.asset using Guid(58ecfed316f7f6e4eb4335ccee5a605f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'c22502d7a6b62e9ff0aea57d98ae3873') in 0.020581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_12.asset
+  artifactKey: Guid(4be8d94c70a357b44b17240ab0021c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_12.asset using Guid(4be8d94c70a357b44b17240ab0021c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9cb21d1ad2079aa282304c4e5610f782') in 0.021583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_33.asset
+  artifactKey: Guid(ff83bcee22058b444908a98277d998c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_33.asset using Guid(ff83bcee22058b444908a98277d998c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'da05966fca98fea6580e86cb64bab106') in 0.016749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_25.asset
+  artifactKey: Guid(4d9beb44058664246934faa275dafb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_25.asset using Guid(4d9beb44058664246934faa275dafb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '436ff1319182701783f1a8334de40372') in 0.020184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_45.asset
+  artifactKey: Guid(a959b762bdf49ed4ebbf171ad48d89df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_45.asset using Guid(a959b762bdf49ed4ebbf171ad48d89df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '560b8921028e832426e9fff744079715') in 0.018944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_46.asset
+  artifactKey: Guid(34c4a150aba65a2479c36b372053f984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_46.asset using Guid(34c4a150aba65a2479c36b372053f984) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '94c11a77a7220d5a91f5ad47fe1ff583') in 0.021419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_24.asset
+  artifactKey: Guid(8aa304b3e853f0248a0a03c60f4de4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Stone Ground/TX Tileset Stone Ground_24.asset using Guid(8aa304b3e853f0248a0a03c60f4de4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '652f3921153ac9c7986cf43416beff30') in 0.023151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.193281 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Shadow Tileset Wall 2.asset
+  artifactKey: Guid(2f3b07d6ad9eccc47b6cd451a5df9a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Shadow Tileset Wall 2.asset using Guid(2f3b07d6ad9eccc47b6cd451a5df9a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5a58321bf945091cd3f4b290f72e9e18') in 0.038868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_6.asset
+  artifactKey: Guid(9cfe2171135f120429c700c27662a5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_6.asset using Guid(9cfe2171135f120429c700c27662a5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '9e9bb0923af0ce6b9c335d718ae739ee') in 0.044228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_45.asset
+  artifactKey: Guid(5a817684b3d859244a3e2126a2cb1589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_45.asset using Guid(5a817684b3d859244a3e2126a2cb1589) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0972eff2ee1b07ce931d086cbb28273c') in 0.023853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_46.asset
+  artifactKey: Guid(ca8588300bdb03149a3be05ab743ed56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_46.asset using Guid(ca8588300bdb03149a3be05ab743ed56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '69070ec9294b41fd6833faf53bb6a72f') in 0.021660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_7.asset
+  artifactKey: Guid(efe5594aca34f2745a57662f43377928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_7.asset using Guid(efe5594aca34f2745a57662f43377928) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '243d8376f445e7e664d7e986fe7675d6') in 0.021443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_13.asset
+  artifactKey: Guid(d0ad0788fe04c754a9af8aca16961d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_13.asset using Guid(d0ad0788fe04c754a9af8aca16961d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '231c067cbb5d1a919ee7684af1e6f625') in 0.021061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_16.asset
+  artifactKey: Guid(503914639ae436b4e82c313961715c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_16.asset using Guid(503914639ae436b4e82c313961715c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3385f719b00271c09ecd9bb393006c6d') in 0.027006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_2.asset
+  artifactKey: Guid(c30a836c12b5ca046b8850c5500adff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_2.asset using Guid(c30a836c12b5ca046b8850c5500adff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '184871df9ddb63c3dda9904befbb2ed2') in 0.022526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_33.asset
+  artifactKey: Guid(46b9ac16ba9ac6d4a9d82ef266ac5150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_33.asset using Guid(46b9ac16ba9ac6d4a9d82ef266ac5150) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a939f62c4cf74b181974c2f9b810c93e') in 0.022383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_14.asset
+  artifactKey: Guid(f5bce4b9585a8514e81572c61b5b6460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_14.asset using Guid(f5bce4b9585a8514e81572c61b5b6460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '447753ca10ed661cb489d5dfa45c0bad') in 0.023291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_36.asset
+  artifactKey: Guid(0f39ce13cb3663f47aa017b24e28c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_36.asset using Guid(0f39ce13cb3663f47aa017b24e28c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b9ac30e91f25e44c56a4c3c6dd778ad9') in 0.020812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_35.asset
+  artifactKey: Guid(6008c5e0b4430914e81e97e42cb887da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_35.asset using Guid(6008c5e0b4430914e81e97e42cb887da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1d5b3682c2726d71f1386a33ef24e152') in 0.015710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_34.asset
+  artifactKey: Guid(3e71cd8fd02745948b1ad875522f5f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_34.asset using Guid(3e71cd8fd02745948b1ad875522f5f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '05882bd05f89a4142f2f1e847cef8725') in 0.018147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_38.asset
+  artifactKey: Guid(de8a5bc2e5c5a1e4c8c9861234c3bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_38.asset using Guid(de8a5bc2e5c5a1e4c8c9861234c3bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ab5a9c78cc6e80330ca5250d00710676') in 0.017555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
