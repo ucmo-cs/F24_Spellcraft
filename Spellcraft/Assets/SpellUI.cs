@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpellUI : MonoBehaviour
 {
     public GameObject Go;
-    int num = 0;
     // Start is called before the first frame update
     void Start()
     {
         
+            Shrink();
     }
 
     // Update is called once per frame
@@ -44,18 +45,19 @@ public class SpellUI : MonoBehaviour
     void enlarge(int input)
     {
         
-        for (int i = 0; i < gameObject.transform.childCount; i++) {
-            if (i != input)
-                Shrink(i);
-            else {
-                Go = this.gameObject.transform.GetChild(input).gameObject;
-                Go.transform.localScale = new Vector3(1.2f, 1.2f, transform.localScale.z);
-            }
-        }
-    }
-    void Shrink(int input)
-    {
         Go = this.gameObject.transform.GetChild(input).gameObject;
+        Go.transform.localScale = new Vector3(1.4f, 1.4f, transform.localScale.z);
+        Go.GetComponent<Image>().color = new UnityEngine.Color(1,1,1);
+        Invoke("Shrink", .5f);
+    }
+    
+    void Shrink()
+    {
+        CancelInvoke("Shrink");
+        for (int i = 0; i < gameObject.transform.childCount; i++) {
+        Go = this.gameObject.transform.GetChild(i).gameObject;
         Go.transform.localScale = new Vector3(1f, 1f, transform.localScale.z);
+        this.gameObject.transform.GetChild(i).gameObject.GetComponent<Image>().color = new UnityEngine.Color(.6f, .6f, .6f);
+    }
     }
 }

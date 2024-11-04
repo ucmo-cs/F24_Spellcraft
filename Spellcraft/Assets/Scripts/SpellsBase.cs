@@ -12,7 +12,7 @@ public class SpellsBase : MonoBehaviour
     Animator anim;
     SpriteRenderer player;
     AudioSource Audio;
-
+    AudioClip clip;
     public Sprite trajectory;
     public Sprite empty;
     public bool casting;
@@ -99,11 +99,13 @@ public class SpellsBase : MonoBehaviour
 
     IEnumerator castSpell()
     {
-        Audio.Play();
+
         // Creating the spell projectile and making sure it's facing the correct way
         GameObject tempSpell = Instantiate(spells[spellIndex], transform.position, transform.rotation);
         tempSpell.transform.right = transform.right.normalized;
-
+        clip =tempSpell.GetComponent<AudioClip>();
+        Audio.clip = clip;
+        Audio.Play();
         // Calculates the angle you're aiming at so it can play the appropriate casting animation
         float angle = transform.rotation.eulerAngles.z;
 
