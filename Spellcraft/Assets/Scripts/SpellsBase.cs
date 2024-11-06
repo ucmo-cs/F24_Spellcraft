@@ -124,7 +124,7 @@ public class SpellsBase : MonoBehaviour
 
         // casting bool variable so that they can't rapid fire casts so animations don't break
         casting = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.7f);
         casting = false;
 
         // Resets the animation bools and player flip state

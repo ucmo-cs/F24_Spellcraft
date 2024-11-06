@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SlimeSpawnerScript : MonoBehaviour
 {
-    public GameObject Slime;
+    public GameObject[] Slimes;
     void Start()
     {
         StartCoroutine("spawnSlime");
@@ -12,7 +12,7 @@ public class SlimeSpawnerScript : MonoBehaviour
 
     IEnumerator spawnSlime()
     {
-        Instantiate(Slime);
+        Instantiate(Slimes[Random.Range(0, 3)]);
         yield return new WaitForSeconds(10f);
         StartCoroutine("spawnSlime");
     }
