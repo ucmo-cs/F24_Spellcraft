@@ -5,13 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectible
-  - Goal
   - Resize
   - Freeze
   - Remote Control
   - Telekinesis
   - Gateway
   - Fire
+  - Wall
   layers:
   - Default
   - TransparentFX

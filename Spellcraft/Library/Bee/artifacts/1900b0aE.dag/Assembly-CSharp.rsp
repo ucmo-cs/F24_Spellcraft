@@ -392,6 +392,7 @@
 "Assets/Scripts/SlimeSpawnerScript.cs"
 "Assets/Scripts/SpellProjectile.cs"
 "Assets/Scripts/SpellsBase.cs"
+"Assets/Scripts/WallScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+
