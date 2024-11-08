@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Pixel Art Top Down - Basic/Scene/SC All Props.unity
+- path: Assets/Scenes/Main Scenes/World 2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

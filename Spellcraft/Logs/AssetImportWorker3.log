@@ -15,7 +15,7 @@ C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-54135
+53769
 Successfully changed project path to: C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft
 C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,16 +49,16 @@ C:/Users/ZDMit/Documents/Spellcraft/F24_Spellcraft/Spellcraft
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27912]  Target information:
+Player connection [8804]  Target information:
 
-Player connection [27912]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2376849520 [EditorId] 2376849520 [Version] 1048832 [Id] WindowsEditor(7,Zach) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8804]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2594025841 [EditorId] 2594025841 [Version] 1048832 [Id] WindowsEditor(7,Zach) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27912]  * "[IP] 153.91.221.107 [Port] 0 [Flags] 2 [Guid] 2376849520 [EditorId] 2376849520 [Version] 1048832 [Id] WindowsEditor(7,Zach) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8804]  * "[IP] 153.91.221.107 [Port] 0 [Flags] 2 [Guid] 2594025841 [EditorId] 2594025841 [Version] 1048832 [Id] WindowsEditor(7,Zach) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27912] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [27912] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8804] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8804] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-Refreshing native plugins compatible for Editor in 35.34 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 20.58 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.46f1 (8e9b8558c41a)
 [Subsystems] Discovering subsystems at path C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/Resources/UnitySubsystems
@@ -74,48 +74,48 @@ Initialize mono
 Mono path[0] = 'C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Users/ZDMit/Desktop/Unity Installations/2022.3.46f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.033878 seconds.
-- Loaded All Assemblies, in  1.695 seconds
+Registered in 0.013646 seconds.
+- Loaded All Assemblies, in  0.448 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.656 seconds
-Domain Reload Profiling: 2343ms
-	BeginReloadAssembly (572ms)
+- Finished resetting the current domain, in  0.363 seconds
+Domain Reload Profiling: 809ms
+	BeginReloadAssembly (142ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (200ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (215ms)
-	LoadAllAssembliesAndSetupDomain (666ms)
-		LoadAssemblies (569ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (138ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (657ms)
-			TypeCache.Refresh (654ms)
-				TypeCache.ScanAssembly (594ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (657ms)
+		AnalyzeDomain (169ms)
+			TypeCache.Refresh (168ms)
+				TypeCache.ScanAssembly (152ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (364ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (529ms)
+		SetupLoadedEditorAssemblies (305ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (13ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (332ms)
-			ProcessInitializeOnLoadMethodAttributes (146ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,7 +124,7 @@ Domain Reload Profiling: 2343ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.157 seconds
+- Loaded All Assemblies, in  0.941 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -133,47 +133,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.011 seconds
-Domain Reload Profiling: 4158ms
-	BeginReloadAssembly (299ms)
+- Finished resetting the current domain, in  1.104 seconds
+Domain Reload Profiling: 2039ms
+	BeginReloadAssembly (191ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (79ms)
-	LoadAllAssembliesAndSetupDomain (1695ms)
-		LoadAssemblies (1083ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (628ms)
+		LoadAssemblies (473ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (772ms)
-			TypeCache.Refresh (654ms)
-				TypeCache.ScanAssembly (601ms)
-			ScanForSourceGeneratedMonoScriptInfo (88ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (2011ms)
+		AnalyzeDomain (274ms)
+			TypeCache.Refresh (232ms)
+				TypeCache.ScanAssembly (211ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1104ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1694ms)
+		SetupLoadedEditorAssemblies (896ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (160ms)
-			ProcessInitializeOnLoadAttributes (1341ms)
-			ProcessInitializeOnLoadMethodAttributes (154ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (649ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 14.37 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 14.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5682 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (347.2 KB). Loaded Objects now: 6151.
-Memory consumption went from 216.8 MB to 216.5 MB.
-Total: 9.986500 ms (FindLiveObjects: 0.592700 ms CreateObjectMapping: 0.831400 ms MarkObjects: 8.278000 ms  DeleteObjects: 0.283000 ms)
+Unloading 33 unused Assets / (346.2 KB). Loaded Objects now: 6151.
+Memory consumption went from 216.8 MB to 216.4 MB.
+Total: 4.925100 ms (FindLiveObjects: 0.550500 ms CreateObjectMapping: 0.642600 ms MarkObjects: 3.558100 ms  DeleteObjects: 0.172800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -190,61 +190,105 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1651317.275255 seconds.
-  path: Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T1.prefab
-  artifactKey: Guid(ebdc6ef285e0bf542bed7e9c1bfb9923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Brick T1.prefab using Guid(ebdc6ef285e0bf542bed7e9c1bfb9923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7ae443e02cd77d9e6c84b5e1fbd71e51') in 0.687451 seconds
+  Time since last request: 1998539.839283 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_0.asset
+  artifactKey: Guid(adf1e302fb349784ba09184eb69dfd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_0.asset using Guid(adf1e302fb349784ba09184eb69dfd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'a2e2eb3fd838e09be077f1595760ff2d') in 0.119941 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Crate Small.prefab
-  artifactKey: Guid(2e2ac125e54a1e44780363d638b1df34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Crate Small.prefab using Guid(2e2ac125e54a1e44780363d638b1df34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: 'e7b1ab92d79c18d14ed0358a1808c625') in 0.031418 seconds
+  Time since last request: 0.000030 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_43.asset
+  artifactKey: Guid(ada4c775f3d0f8e459af2867f50f7b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_43.asset using Guid(ada4c775f3d0f8e459af2867f50f7b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '1a70c49da694ce118bdd0b4305772506') in 0.021476 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair Broken R.prefab
-  artifactKey: Guid(b7a5fce6e52ebbf488a8e8516c6692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stair Broken R.prefab using Guid(b7a5fce6e52ebbf488a8e8516c6692cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '7302806cdc93b889242f2879cce630a2') in 0.029065 seconds
+  Time since last request: 0.000032 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_29.asset
+  artifactKey: Guid(5cb2704116eff4443b949135e9fe07f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_29.asset using Guid(5cb2704116eff4443b949135e9fe07f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '3e840754ba7ab6fbd1d5e31e752eb51f') in 0.016116 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 29
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Gravestone B.prefab
-  artifactKey: Guid(6242b925f1d3e0d44a183102cd3d4c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Gravestone B.prefab using Guid(6242b925f1d3e0d44a183102cd3d4c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '133d4399aa3669606c2ac6e73cafe638') in 0.030905 seconds
+  Time since last request: 0.000015 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_39.asset
+  artifactKey: Guid(815a98150ae40f24482bf4ae569f8718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_39.asset using Guid(815a98150ae40f24482bf4ae569f8718) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2c99e27392b1a5e84d4851062e90e183') in 0.022527 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone Bench W.prefab
-  artifactKey: Guid(8eb546cfc24c8c24196899cee5797135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone Bench W.prefab using Guid(8eb546cfc24c8c24196899cee5797135) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '96911db52a83b1ddf16fb68bbc85fefe') in 0.047016 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_60.asset
+  artifactKey: Guid(1d152d7da7af5144aaa09f2cfe101265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_60.asset using Guid(1d152d7da7af5144aaa09f2cfe101265) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '81d6d4cae7b81c2d3ebcd98795022e61') in 0.017497 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T3.prefab
-  artifactKey: Guid(ba7fef4c928d8c4459466bf93171730e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Pixel Art Top Down - Basic/Prefab/Props/PF Props Stone T3.prefab using Guid(ba7fef4c928d8c4459466bf93171730e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
- -> (artifact id: '6d78cd6b33b070a01fddf4de3b554039') in 0.030140 seconds
+  Time since last request: 0.000016 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_31.asset
+  artifactKey: Guid(f6d4829a6950ff94e85270d3fa1f75ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_31.asset using Guid(f6d4829a6950ff94e85270d3fa1f75ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '06a8c4c57e5068c60043fb4509c33677') in 0.018968 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_55.asset
+  artifactKey: Guid(74d33214d8663e14a9ff6f916f417124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_55.asset using Guid(74d33214d8663e14a9ff6f916f417124) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '2181964bfffc012f06c44c7bb80292bf') in 0.016533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_5.asset
+  artifactKey: Guid(4e1e2fa91134aaf47a8d4022b0d0a6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_5.asset using Guid(4e1e2fa91134aaf47a8d4022b0d0a6ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '82aaf2a1d7618553bb1df54bc845b2e9') in 0.014254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_36.asset
+  artifactKey: Guid(0f39ce13cb3663f47aa017b24e28c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_36.asset using Guid(0f39ce13cb3663f47aa017b24e28c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'b9ac30e91f25e44c56a4c3c6dd778ad9') in 0.017417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_57.asset
+  artifactKey: Guid(8a34a97d3972ac841ab5aff6d72e9b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_57.asset using Guid(8a34a97d3972ac841ab5aff6d72e9b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '52db77e4496f104cd1f63e496722a611') in 0.015329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_18.asset
+  artifactKey: Guid(de17a1cff7186dc4e81bd03c2256da56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_18.asset using Guid(de17a1cff7186dc4e81bd03c2256da56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ddfe1b1fc85cc16f7167b71050cb4d93') in 0.019414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
