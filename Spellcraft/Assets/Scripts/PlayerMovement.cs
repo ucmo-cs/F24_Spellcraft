@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rb;
     Animator anim;
     SpriteRenderer sr;
     public float speed = 5f;
-    float moveHorizontal, moveVertical;
-    SpellsBase spellScript;
+    SpellsBase spellScript; // Allows to disable the casting system when remote controlling
+    GameObject player; // Allows for easier time to switch for remote control
     void Start()
     {
         spellScript = transform.Find("Trajectory").GetComponent<SpellsBase>();
-        rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
         sr = this.GetComponent<SpriteRenderer>();
+        player = this.gameObject;
     }
 
     void Update()
     {
         // Animates the character moving up
         if(Input.GetAxisRaw("Vertical") > 0) {
-            Vector3 temp = this.transform.position; ;
+            // Movement
+            Vector3 temp = player.transform.position; ;
             temp.y += speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
+            // Animation
             if(!spellScript.casting) {
                 anim.SetBool("Down", false);
                 anim.SetBool("Up", true);
@@ -34,9 +35,11 @@ public class PlayerMovement : MonoBehaviour
         }
         // Animates the character moving down
         else if(Input.GetAxisRaw("Vertical") < 0) {
-            Vector3 temp = this.transform.position; ;
+            // Movement
+            Vector3 temp = player.transform.position; ;
             temp.y -= speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
+            // Animation
             if(!spellScript.casting) {
                 anim.SetBool("Down", true);
                 anim.SetBool("Up", false);
@@ -46,9 +49,11 @@ public class PlayerMovement : MonoBehaviour
         }
         // Animates the character moving right
         if(Input.GetAxisRaw("Horizontal") > 0) {
-            Vector3 temp = this.transform.position; ;
+            // Movement
+            Vector3 temp = player.transform.position; ;
             temp.x += speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
+            // Animation
             if(!spellScript.casting) {
                 anim.SetBool("Down", false);
                 anim.SetBool("Up", false);
@@ -58,9 +63,11 @@ public class PlayerMovement : MonoBehaviour
         }
         // Animates the character moving left
         else if(Input.GetAxisRaw("Horizontal") < 0) {
-            Vector3 temp = this.transform.position; ;
+            // Movement
+            Vector3 temp = player.transform.position; ;
             temp.x -= speed * Time.deltaTime;
-            this.transform.position = temp;
+            player.transform.position = temp;
+            // Animation
             if(!spellScript.casting) {
                 anim.SetBool("Down", false);
                 anim.SetBool("Up", false);
@@ -74,5 +81,25 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Up", false);
             anim.SetBool("Side", false);
         }
+    }
+
+    // Function to allow us to more easily swap control between the player and the enemy
+    public void changePlayer(GameObject play)
+    {
+        // Checks if we're switching to the player character
+        if(play == this.gameObject) {
+            // Sincer we're switching back, we want to cast spells
+            spellScript.enabled = true;
+        }
+        // Since it's not the player, we don't want to cast spells
+        else {
+            // Makes the trajectory line invisible so that it looks like it's disabled
+            spellScript.gameObject.GetComponent<SpriteRenderer>().sprite = spellScript.empty;
+            spellScript.enabled = false;
+        }
+        // Sets up all the parts so that we don't need to change much
+        player = play;
+        anim = play.GetComponent<Animator>();
+        sr = play.GetComponent<SpriteRenderer>();
     }
 }
