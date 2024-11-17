@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7475084918803743138}
   - component: {fileID: 6026681994283486359}
   - component: {fileID: 5912739331160096426}
-  - component: {fileID: 8121585786741352331}
+  - component: {fileID: 6015200466097662051}
   - component: {fileID: 3827869367300765745}
   m_Layer: 0
   m_Name: GatewayProjectile
@@ -113,7 +113,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!95 &5912739331160096426
 Animator:
@@ -136,7 +136,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8121585786741352331
+--- !u!114 &6015200466097662051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8904364342896868890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f4ef3bff8d2234a863908edfb96b36, type: 3}
+  m_Script: {fileID: 11500000, guid: 17f264f159cf677409adc48be31a9e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &3827869367300765745

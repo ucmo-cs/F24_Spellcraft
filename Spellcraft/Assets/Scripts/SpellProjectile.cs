@@ -22,4 +22,11 @@ public class SpellProjectile : MonoBehaviour
         // Makes the projectile go straight according to the angle it's supposed to go
         rb.velocity = transform.right * velocity;
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "Wall") {
+            Destroy(this.gameObject);
+        }
+    }
 }
