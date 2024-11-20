@@ -101,6 +101,13 @@ public class SpellsBase : MonoBehaviour
         GameObject tempSpell = Instantiate(spells[spellIndex], transform.position, transform.rotation);
         tempSpell.transform.right = transform.right.normalized;
 
+        SpriteRenderer spellRenderer = tempSpell.GetComponent<SpriteRenderer>();
+        if (spellRenderer != null)
+        {
+            spellRenderer.sortingLayerID = player.sortingLayerID;
+            spellRenderer.sortingOrder = player.sortingOrder; // Matches the player's sorting order as well
+        }
+
         // Calculates the angle you're aiming at so it can play the appropriate casting animation
         float angle = transform.rotation.eulerAngles.z;
 

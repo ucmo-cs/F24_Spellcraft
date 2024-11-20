@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SlimeSpawnerScript : MonoBehaviour
 {
+    public int MaxSlimes = 8;
+    private int numSlimes = 0;
+
     public GameObject Slime;
     void Start()
     {
@@ -12,8 +15,12 @@ public class SlimeSpawnerScript : MonoBehaviour
 
     IEnumerator spawnSlime()
     {
-        Instantiate(Slime);
-        yield return new WaitForSeconds(5f);
-        StartCoroutine("spawnSlime");
+        if (numSlimes <= MaxSlimes)
+        {
+            Instantiate(Slime);
+            yield return new WaitForSeconds(5f);
+            StartCoroutine("spawnSlime");
+            numSlimes++;
+        }
     }
 }
