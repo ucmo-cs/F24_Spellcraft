@@ -20,7 +20,7 @@ public class ScoreManagerScript : MonoBehaviour
         scoreText.text = score + "/" + TOTAL_SCORE;
         if(score >= TOTAL_SCORE) {
             Debug.Log("Goal reached!");
-            Time.timeScale = 0f;        // Pause game
+            //Time.timeScale = 0f;        // Pause game
             victoryCanvas.SetActive(true);
         }
     }
