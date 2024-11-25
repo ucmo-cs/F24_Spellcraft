@@ -7,23 +7,26 @@ public class PortalHoldScript : MonoBehaviour
 {
     //public GameObject Portal1;
     //public GameObject Portal2;
-    bool switcher = false;
+    //bool switcher = false;
     public GameObject[] portals;
     public GameObject portalPrefab;
-    GameObject bounce;
-    float bounceRotate;
+    //GameObject bounce;
+    //float bounceRotate;
     int index;
+    bool open;
 
     private void Awake()
     {
         portals = new GameObject[2];
         index = 0;
+        open = false;
     }
-    // Update is called once per frame
+
     void Update()
     {
 
     }
+
     /*public void NewPort(GameObject newPortal)
     {
         newPortal.GetComponent<GatewayPortalScript>().Parent = gameObject;
@@ -40,21 +43,33 @@ public class PortalHoldScript : MonoBehaviour
         switcher = !switcher;
     }*/
 
-    public void PlacePortal(Transform portal, GameObject bounce)
+    public void PlacePortal(Vector3 portal)
     {
-        //portals[index%2] = Instantiate(portalPrefab, portal);
-        //index++;
-        this.bounce = bounce;
-        StartCoroutine("RotateAssist");
-        float rot = portal.rotation.z - bounceRotate;
-        Debug.Log(rot);
+        if(index > 1) {
+            Destroy(portals[index%2]);
+        }
+        portals[index%2] = Instantiate(portalPrefab, new Vector3(portal.x, portal.y), Quaternion.Euler(0, 0, portal.z));
+        portals[index%2].GetComponent<GatewayPortalScript>().num = index % 2;
+        index++;
+        if(index >= 2) {
+            open = true;
+        }
     }
 
-    IEnumerator RotateAssist()
+    public void Transport(int num, Transform trans)
     {
-        yield return new WaitForSeconds(0.1f);
-        bounceRotate = bounce.transform.rotation.z;
-        Destroy(bounce);
+        if(open) {
+            open = false;
+            num = (num + 1) % 2;
+            trans.position = portals[num].transform.position;
+            trans.Rotate(0f, 0f, Mathf.Abs(portals[(num+1)%2].transform.eulerAngles.z - portals[num].transform.eulerAngles.z) + 270f);
+            //trans.eulerAngles = new Vector3(0f, 0f, portals[num].transform.eulerAngles.z);
+            Invoke("OpenPortal", 0.1f);
+        }
+    }
 
+    void OpenPortal()
+    {
+        open = true;
     }
 }

@@ -100,11 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fae7c878f46940578e84c43fec81b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
+  Parent: {fileID: 3986322099490736006, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
   num: 0
-  direction: 0
-  box: {fileID: 0}
-  open: 1
+  rotation: 0
   anim: {fileID: 0}
   aud: {fileID: 0}
 --- !u!61 &454014123573838164

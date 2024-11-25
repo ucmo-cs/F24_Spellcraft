@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638628949414305082
-    m_Hash: 3514303169
+      ticks: 638636639560000000
+    m_Hash: 5483027
   m_LockFileStatus:
     m_FilePath: C:/Users/Owner/Documents/GitHub/F24_Spellcraft/Spellcraft/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638628949414923891
-    m_Hash: 2429836110
+      ticks: 638636639560000000
+    m_Hash: 1037022759
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

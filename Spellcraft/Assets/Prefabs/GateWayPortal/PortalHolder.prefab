@@ -44,5 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e3c7287e5ab847c59cac910f546b346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Portal1: {fileID: 0}
-  Portal2: {fileID: 0}
+  portalPrefab: {fileID: 6711941500242550633, guid: d12adc4d5da4e4dcdbeabfb169fbfc74, type: 3}

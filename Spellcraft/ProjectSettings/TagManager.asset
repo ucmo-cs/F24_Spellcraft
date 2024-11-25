@@ -12,6 +12,7 @@ TagManager:
   - Remote Control
   - Collectible
   - Wall
+  - WallCheck
   layers:
   - Default
   - TransparentFX

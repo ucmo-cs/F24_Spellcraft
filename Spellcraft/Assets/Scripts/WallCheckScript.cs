@@ -8,13 +8,11 @@ public class WallCheckScript : MonoBehaviour
     // Speed at which the projectile will fly
     float velocity = 10f;
     Rigidbody2D rb;
-    bool collided;
 
     void Start()
     {
         StartCoroutine("DestroySelf");
         rb = this.GetComponent<Rigidbody2D>();
-        collided = false;
     }
 
     void Update()
@@ -27,17 +25,17 @@ public class WallCheckScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Wall") {
             Debug.Log("Collision");
-            GameObject.Find("WallBouncer(Clone)").GetComponent<BounceScript>().receiveCheck(this.transform, true);
+            GameObject.Find("WallBouncer(Clone)").GetComponent<BounceScript>().receiveCheck(new Vector3(this.transform.position.x, this.transform.position.y, this.transform.eulerAngles.z), true);
             StopCoroutine("DestroySelf");
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
         }
     }
 
     IEnumerator DestroySelf()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.7f);
         Debug.Log("Timer");
-        GameObject.Find("WallBouncer(Clone)").GetComponent<BounceScript>().receiveCheck(this.transform, false);
-        this.gameObject.SetActive(false);
+        GameObject.Find("WallBouncer(Clone)").GetComponent<BounceScript>().receiveCheck(new Vector3(this.transform.position.x, this.transform.position.y, this.transform.eulerAngles.z), false);
+        //this.gameObject.SetActive(false);
     }
 }
