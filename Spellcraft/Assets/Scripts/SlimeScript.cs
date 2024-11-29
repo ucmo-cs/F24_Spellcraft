@@ -119,6 +119,23 @@ public class SlimeScript : MonoBehaviour
                     Destroy(collision.gameObject);
                 }
                 break;
+            case "Telekinesis":
+                StopAllCoroutines();
+                Vector2 mover = collision.gameObject.transform.position;
+                Vector2 dist = Vector2.zero;
+                if (transform.position.x < mover.x - .1)
+                    dist.x = -1;
+                else if (transform.position.x > mover.x + .1)
+                    dist.x = 1;
+                if (transform.position.y < mover.y - .1)
+                    dist.y = -1;
+                else if (transform.position.y > mover.y + .1)
+                    dist.y = 1;
+
+                transform.position = new Vector3(transform.position.x + dist.x, transform.position.y + dist.y);
+                target = transform.position;
+                Destroy(collision.gameObject);
+                break;
             case "Freeze":
                 StopAllCoroutines(); // Careful cause this stops all coroutines in script
                 anim.SetBool("Frozen", true);
