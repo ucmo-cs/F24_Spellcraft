@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 51041733}
   m_Layer: 20
   m_Name: Layer 1 - Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14322,7 +14322,7 @@ GameObject:
   - component: {fileID: 368449513}
   m_Layer: 21
   m_Name: Layer 2 - Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17120,7 +17120,7 @@ GameObject:
   - component: {fileID: 470949982}
   m_Layer: 22
   m_Name: Layer 3 - Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34181,6 +34181,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7509736641193634087, guid: a0a66c9b152e801409fc26c4ca493d18, type: 3}
   m_PrefabInstance: {fileID: 1869981516}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &1487958286815238587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.69842
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09733972
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.788556
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927141536989520553, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3986322099490736006, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+      propertyPath: m_Name
+      value: PortalHolder
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b0e9d0184294b4fdcb0d18ea0123159c, type: 3}
+>>>>>>> origin/Gateway_Portal
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -34192,3 +34252,7 @@ SceneRoots:
   - {fileID: 349803985}
   - {fileID: 891511431}
   - {fileID: 54039685}
+<<<<<<< HEAD
+=======
+  - {fileID: 1487958286815238587}
+>>>>>>> origin/Gateway_Portal
