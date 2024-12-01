@@ -389,6 +389,8 @@
 "Assets/Pixel Art Top Down - Basic/Script/PropsAltar.cs"
 "Assets/Pixel Art Top Down - Basic/Script/SpriteColorAnimation.cs"
 "Assets/Pixel Art Top Down - Basic/Script/TopDownCharacterController.cs"
+"Assets/Scripts/BossHealthBar.cs"
+"Assets/Scripts/BossScript.cs"
 "Assets/Scripts/GameplayScript.cs"
 "Assets/Scripts/MenuButtonScript.cs"
 "Assets/Scripts/PlayerMovement.cs"

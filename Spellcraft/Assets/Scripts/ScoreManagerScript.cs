@@ -8,7 +8,10 @@ public class ScoreManagerScript : MonoBehaviour
     public Text scoreText;
     public GameObject victoryCanvas;
     public int score;
-    public const int TOTAL_SCORE = 5;
+
+    // Changed from const to public int
+    public int TOTAL_SCORE = 5;
+
     void Start()
     {
         score = 0;
@@ -18,10 +21,6 @@ public class ScoreManagerScript : MonoBehaviour
     void Update()
     {
         scoreText.text = score + "/" + TOTAL_SCORE;
-        if(score >= TOTAL_SCORE) {
-            Debug.Log("Goal reached!");
-            //Time.timeScale = 0f;        // Pause game
-            victoryCanvas.SetActive(true);
-        }
+        
     }
 }

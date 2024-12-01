@@ -16,7 +16,7 @@ namespace Cainos.PixelArtTopDown_Basic
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!glowing && scoreManager != null && scoreManager.score >= ScoreManagerScript.TOTAL_SCORE)
+            if (!glowing && scoreManager != null && scoreManager.score >= scoreManager.TOTAL_SCORE)
             {
                 StartCoroutine(GlowRunesSequentially());
             }
