@@ -15418,6 +15418,10 @@ PrefabInstance:
       propertyPath: ScoreManager
       value: 
       objectReference: {fileID: 216355056}
+    - target: {fileID: 5531148379484880756, guid: 705837d823040f341a5ea1fcf63a9ea3, type: 3}
+      propertyPath: fireHitsToKill
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7852468859686085368, guid: 705837d823040f341a5ea1fcf63a9ea3, type: 3}
       propertyPath: m_Name
       value: Boss

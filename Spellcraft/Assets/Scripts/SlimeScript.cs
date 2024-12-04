@@ -6,7 +6,7 @@ using UnityEngine;
 public class SlimeScript : MonoBehaviour
 {
     Rigidbody2D rb;
-    //public GameObject ScoreManager;
+    public GameObject ScoreManager;
     GameObject player;
     public float distance = 0.5f;
     public float moveSpeed = 3f;
@@ -19,7 +19,7 @@ public class SlimeScript : MonoBehaviour
         target = transform.position;    // Safety measure so that the slime doesn't try to leave the map
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine("moveSlime");    // Makes sure the slime can move
-        //ScoreManager = GameObject.Find("ScoreManager");     // Only for the score tally system
+        ScoreManager = GameObject.Find("ScoreManager");     // Only for the score tally system
         anim = gameObject.GetComponent<Animator>();
         sr = gameObject.GetComponent<SpriteRenderer>();
         // The slime doesn't start immediately affected by a spell
@@ -31,14 +31,14 @@ public class SlimeScript : MonoBehaviour
     void Update()
     {
         // Checks so that the slime doesn't go out of bounds (needs to be revised for new play area)
-        if(target.x < -7f)
+        /*if(target.x < -7f)
             target.x = -7f;
         else if(target.x > 7.2f)
             target.x = 7.2f;
         if(target.y < -3.8f)
             target.y = -3.8f;
         else if(target.y > 4.5f)
-            target.y = 4.5f;
+            target.y = 4.5f; */
         // Only lets them move if they should be able to
         if(!frozen && !controlled) {
             transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
@@ -107,7 +107,7 @@ public class SlimeScript : MonoBehaviour
             case "Fire":
                 // Since fireball can unfreeze, it has an if-else for that
                 if(!frozen) {
-                    //ScoreManager.GetComponent<ScoreManagerScript>().score += 1;
+                    ScoreManager.GetComponent<ScoreManagerScript>().score += 1;
                     Destroy(collision.gameObject);
                     Destroy(this.gameObject);
                 }
