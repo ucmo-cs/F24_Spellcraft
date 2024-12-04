@@ -81,8 +81,17 @@ public class BossScript : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Fire":
-                currentFireHits++;
+                int damage = frozen ? 10 : 1;
+                currentFireHits += damage;
                 Destroy(collision.gameObject);
+
+                if (frozen)
+                {
+                    StopAllCoroutines();
+                    anim.SetBool("Frozen", false);
+                    frozen = false;
+                    StartCoroutine("MoveBoss");
+                }
 
                 if (currentFireHits >= fireHitsToKill)
                 {
