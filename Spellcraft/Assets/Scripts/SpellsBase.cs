@@ -1,143 +1,113 @@
 using System.Collections;
 using System.Collections.Generic;
-//using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class SpellsBase : MonoBehaviour
 {
-    //public Image SpellInfo;
-    public GameObject[] spells;
-    Animator anim;
-    SpriteRenderer player;
-
-    public Sprite trajectory;
+    public GameObject[] spells; // Array of spell prefabs
+    public SpriteRenderer trajectory;
     public Sprite empty;
-    public bool casting;
-    int spellIndex;
-    void Start()
+    public Sprite trajectorySprite;
+    public Animator anim;
+    public int selectedSpellIndex = -1; // Currently selected spell (-1 means none selected)
+    public float spellCooldown = 0.5f; // Cooldown between spells
+    public bool casting = false;
+    private SpriteRenderer playerSprite;
+
+    private void Start()
     {
-        //SpellInfo.gameObject.SetActive(false);
-        GetComponent<SpriteRenderer>().sprite = empty;
+        trajectory = this.GetComponent<SpriteRenderer>();
         anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
+        playerSprite = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
-        // Calls the function that controls the trajectory's movement
-        prepareSpell();
-        // This will show the trajectory and keybinds if either shift key is held
-        if((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))) {
-            showSpellInfo();
-        }
-        // This will hide the trajectory and keybinds once either shift key is released
-        else if((Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))) {
-            hideSpellInfo();
-        }
-        // Spawns a spell projectile when the appropriate number key is pressed
-        if(!casting) {
-            if(Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Keypad1)) {
-                spellIndex = 0;
-                StartCoroutine("castSpell");
-            }
-            else if(Input.GetKey(KeyCode.Alpha2) || Input.GetKey(KeyCode.Keypad2)) {
-                spellIndex = 1;
-                StartCoroutine("castSpell");
-            }
-            else if(Input.GetKey(KeyCode.Alpha3) || Input.GetKey(KeyCode.Keypad3)) {
-                spellIndex = 2;
-                StartCoroutine("castSpell");
-            }
-            else if(Input.GetKey(KeyCode.Alpha4) || Input.GetKey(KeyCode.Keypad4)) {
-                spellIndex = 3;
-                StartCoroutine("castSpell");
-            }
-            else if(Input.GetKey(KeyCode.Alpha5) || Input.GetKey(KeyCode.Keypad5)) {
-                spellIndex = 4;
-                StartCoroutine("castSpell");
-            }
-            else if(Input.GetKey(KeyCode.Alpha6) || Input.GetKey(KeyCode.Keypad6)) {
-                spellIndex = 5;
-                StartCoroutine("castSpell");
+        HandleSpellSelection();
+        HandleSpellFiring();
+    }
+
+    // Handles spell selection via keyboard or UI
+    private void HandleSpellSelection()
+    {
+        // Keyboard input for spell selection
+        for (int i = 1; i <= spells.Length; i++)
+        {
+            if (Input.GetKeyDown(i.ToString()))
+            {
+                SelectSpell(i - 1);
             }
         }
     }
 
-    // Short function to show the trajectory and keybinds
-    void showSpellInfo()
+    // Allows spell selection via UI
+    public void SelectSpell(int spellIndex)
     {
-        //SpellInfo.gameObject.SetActive(true);
-        GetComponent<SpriteRenderer>().sprite = trajectory;
+        if (spellIndex >= 0 && spellIndex < spells.Length)
+        {
+            selectedSpellIndex = spellIndex;
+            Debug.Log($"Spell {spellIndex + 1} selected.");
+        }
     }
 
-    // Short function to hide the trajectory and keybinds
-    void hideSpellInfo()
+    // Handles firing the selected spell with left click
+    private void HandleSpellFiring()
     {
-        //SpellInfo.gameObject.SetActive(false);
-        GetComponent<SpriteRenderer>().sprite = empty;
+        if (selectedSpellIndex != -1 && Input.GetMouseButtonDown(0) && !casting)
+        {
+            StartCoroutine(CastSpell());
+        }
     }
 
-    // short function to calculate where the trajectory should go based on the mouse pointer's position
-    void prepareSpell()
+    // Displays trajectory and rotates to face the mouse position
+    private void PrepareSpell()
     {
-        // Takes in the mouse's current position
-        Vector3 mousePosition = Input.mousePosition;
-        // Translates the mouse's current position into something applicable to the game's window
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        // Sets x and y of the mouse's position to the distance between it and the trajectory's current position
-        mousePosition.x = mousePosition.x - transform.position.x;
-        mousePosition.y = mousePosition.y - transform.position.y;
-        // Calculates the angle of the where the mouse is in relation to where the trajectory line is (minus 90 degrees for some reason)
-        float angle = (Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg) - 90f;
-        // Sets the trajectory line's rotation to be on the mouse's position and since we can't snap the mouse, it will look smooth
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = mousePos - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+        trajectory.sprite = trajectorySprite;
     }
 
-    IEnumerator castSpell()
+    // Hides the trajectory when casting is disabled
+    private void HideSpellInfo()
     {
-        // Creating the spell projectile and making sure it's facing the correct way
-        GameObject tempSpell = Instantiate(spells[spellIndex], transform.position, transform.rotation);
-        tempSpell.transform.right = transform.right.normalized;
+        trajectory.sprite = empty;
+    }
 
-        SpriteRenderer spellRenderer = tempSpell.GetComponent<SpriteRenderer>();
+    // Casts the selected spell
+    private IEnumerator CastSpell()
+    {
+        casting = true;
+        PrepareSpell();
+
+        // Play appropriate animation based on direction
+        float zAngle = transform.eulerAngles.z;
+        anim.SetBool("CastUp", zAngle > 45f && zAngle <= 135f);
+        anim.SetBool("CastSide", (zAngle > 135f && zAngle <= 225f) || (zAngle > 315f || zAngle <= 45f));
+        anim.SetBool("CastDown", zAngle > 225f && zAngle <= 315f);
+
+        // Instantiate the selected spell prefab
+
+        GameObject spell = Instantiate(spells[selectedSpellIndex], transform.position, transform.rotation * Quaternion.Euler(0, 0, -90));
+
+        // Adjust its sorting layer to match the player's
+        SpriteRenderer spellRenderer = spell.GetComponent<SpriteRenderer>();
         if (spellRenderer != null)
         {
-            spellRenderer.sortingLayerID = player.sortingLayerID;
-            spellRenderer.sortingOrder = player.sortingOrder; // Matches the player's sorting order as well
+            spellRenderer.sortingLayerName = playerSprite.sortingLayerName;
+            spellRenderer.sortingOrder = playerSprite.sortingOrder;
         }
 
-        // Calculates the angle you're aiming at so it can play the appropriate casting animation
-        float angle = transform.rotation.eulerAngles.z;
+        yield return new WaitForSeconds(spellCooldown);
 
-        // Checks where they are aiming for the appropriate animation
-        if((angle > 0 && angle < 45) || (angle < 360 && angle > 315)) {
-            anim.SetBool("CastUp", true);
-            player.flipX = false;
-        }
-        else if((angle >= 45 && angle <= 135)) {
-            anim.SetBool("CastSide", true);
-            player.flipX = false;
-        }
-        else if((angle > 135 && angle < 225)) {
-            anim.SetBool("CastDown", true);
-            player.flipX = false;
-        }
-        else if((angle > 225 && angle < 315)) {
-            anim.SetBool("CastSide", true);
-            player.flipX = true;
-        }
-
-        // casting bool variable so that they can't rapid fire casts so animations don't break
-        casting = true;
-        yield return new WaitForSeconds(0.7f);
-        casting = false;
-
-        // Resets the animation bools and player flip state
-        anim.SetBool("CastSide", false);
+        // Reset animations
         anim.SetBool("CastUp", false);
+        anim.SetBool("CastSide", false);
         anim.SetBool("CastDown", false);
-        player.flipX = false;
+
+        HideSpellInfo();
+        casting = false;
     }
 }
