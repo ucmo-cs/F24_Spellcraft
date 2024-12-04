@@ -6,7 +6,7 @@ using UnityEngine;
 public class SlimeScript : MonoBehaviour
 {
     Rigidbody2D rb;
-    public GameObject ScoreManager;
+    //public GameObject ScoreManager;
     GameObject player;
     public float distance = 0.5f;
     public float moveSpeed = 3f;
@@ -19,7 +19,7 @@ public class SlimeScript : MonoBehaviour
         target = transform.position;    // Safety measure so that the slime doesn't try to leave the map
         rb = gameObject.GetComponent<Rigidbody2D>();
         StartCoroutine("moveSlime");    // Makes sure the slime can move
-        ScoreManager = GameObject.Find("ScoreManager");     // Only for the score tally system
+        //ScoreManager = GameObject.Find("ScoreManager");     // Only for the score tally system
         anim = gameObject.GetComponent<Animator>();
         sr = gameObject.GetComponent<SpriteRenderer>();
         // The slime doesn't start immediately affected by a spell
@@ -31,8 +31,6 @@ public class SlimeScript : MonoBehaviour
     void Update()
     {
         // Checks so that the slime doesn't go out of bounds (needs to be revised for new play area)
-
-        /*
         if(target.x < -7f)
             target.x = -7f;
         else if(target.x > 7.2f)
@@ -41,37 +39,13 @@ public class SlimeScript : MonoBehaviour
             target.y = -3.8f;
         else if(target.y > 4.5f)
             target.y = 4.5f;
-
-        */
         // Only lets them move if they should be able to
-
-        if (!frozen && !controlled)
-        {
-            // Calculate movement direction
-            Vector2 direction = (target - transform.position).normalized;
-
-            // Perform a raycast to detect walls in the direction of movement
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance);
-
-            Debug.DrawRay(transform.position, direction * distance, Color.red);
-
-            if (hit.collider != null) Debug.Log("Hit wall: " + hit.collider.name);
-
-
-            if (hit.collider != null && hit.collider.CompareTag("Wall"))
-            {
-                // Stop movement immediately
-                target = transform.position;
-                return; // Skip further movement logic
-            }
-
-            // Move toward the target if no wall is detected
-            Vector2 newPosition = Vector2.MoveTowards(rb.position, target, moveSpeed * Time.deltaTime);
-            rb.MovePosition(newPosition);
+        if(!frozen && !controlled) {
+            transform.position = Vector3.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
         }
 
         // If the slime isn't moving anymore, they shouldn't look like they're moving
-        if (target == transform.position) {
+        if(target == transform.position) {
             anim.SetBool("Side", false);
             anim.SetBool("Down", false);
             anim.SetBool("Up", false);
@@ -90,6 +64,7 @@ public class SlimeScript : MonoBehaviour
             target = transform.position;
         }
     }
+
     IEnumerator moveSlime()
     {
         // Makes it wait first so that it can be frozen and still continue moving
@@ -132,7 +107,7 @@ public class SlimeScript : MonoBehaviour
             case "Fire":
                 // Since fireball can unfreeze, it has an if-else for that
                 if(!frozen) {
-                    ScoreManager.GetComponent<ScoreManagerScript>().score += 1;
+                    //ScoreManager.GetComponent<ScoreManagerScript>().score += 1;
                     Destroy(collision.gameObject);
                     Destroy(this.gameObject);
                 }
